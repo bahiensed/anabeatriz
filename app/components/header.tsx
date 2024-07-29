@@ -4,6 +4,7 @@ import logo from "@/app/assets/logo.jpg";
 import BannerTypography from "@/app/ui/bannerTypography";
 import PlaceIcon from "@mui/icons-material/Place";
 import ButtonBanner from "@/app/ui/buttonBanner";
+import ButtonBanner2 from "../ui/buttonBanner2";
 
 const Header = () => {
   return (
@@ -34,7 +35,12 @@ const Header = () => {
             </Typography>
           </Stack>
         </Stack>
-        <ButtonBanner />
+        <Stack direction="row" justifyContent="center" spacing={1} sx={{mt:3}}>
+          <ButtonBanner />
+          <Stack direction="column" justifyContent="center">
+            <ButtonBanner2 />
+          </Stack>
+        </Stack>
       </Stack>
     </Box>
   );
