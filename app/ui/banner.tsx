@@ -4,7 +4,7 @@ import logo from "@/app/assets/logo.jpg";
 import BannerTypography from "@/app/ui/bannerTypography";
 import PlaceIcon from "@mui/icons-material/Place";
 import ButtonBanner from "@/app/ui/buttonBanner";
-import ButtonBanner2 from "../ui/buttonBanner2";
+import ButtonBanner2 from "./buttonBanner2";
 
 const Banner = () => {
   return (
