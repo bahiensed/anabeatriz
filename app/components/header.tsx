@@ -3,6 +3,7 @@ import Image from "next/image";
 import logo from "@/app/assets/logo.jpg";
 import BannerTypography from "@/app/ui/bannerTypography";
 import PlaceIcon from "@mui/icons-material/Place";
+import ButtonBanner from "@/app/ui/buttonBanner";
 
 const Header = () => {
   return (
@@ -20,7 +21,12 @@ const Header = () => {
           }}
         />
         <BannerTypography />
-        <Stack direction="row" justifyContent="center" spacing={1} sx={{mt: 2}}>
+        <Stack
+          direction="row"
+          justifyContent="center"
+          spacing={1}
+          sx={{ mt: 2 }}
+        >
           <PlaceIcon sx={{ color: "#fff" }} />
           <Stack direction="column" justifyContent="center">
             <Typography sx={{ color: "#fff", fontWeight: 700 }}>
@@ -28,6 +34,7 @@ const Header = () => {
             </Typography>
           </Stack>
         </Stack>
+        <ButtonBanner />
       </Stack>
     </Box>
   );
