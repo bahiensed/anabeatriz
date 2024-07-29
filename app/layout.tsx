@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/app/components/header";
+import Banner from "@/app/components/banner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body style={{ background: "#eee" }}>
-        <Header />
+        <Banner />
         {children}
       </body>
     </html>

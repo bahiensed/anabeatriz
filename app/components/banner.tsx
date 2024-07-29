@@ -6,7 +6,7 @@ import PlaceIcon from "@mui/icons-material/Place";
 import ButtonBanner from "@/app/ui/buttonBanner";
 import ButtonBanner2 from "../ui/buttonBanner2";
 
-const Header = () => {
+const Banner = () => {
   return (
     <Box sx={{ backgroundColor: "#047b8b", width: "100%", height: "600px" }}>
       <Stack sx={{ alignItems: "center" }}>
@@ -46,4 +46,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Banner;

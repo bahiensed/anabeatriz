@@ -9,7 +9,7 @@ const BannerTypography = () => {
         variant="h2"
         sx={{ color: "#fff", mt: 5 }}
       >
-        Ana Beatriz Winter
+        ANA BEATRIZ WINTER
       </Typography>
 
       <Typography
