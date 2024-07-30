@@ -1,18 +1,14 @@
 "use client";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-
-import Typography from "@mui/material/Typography";
-
-import Button from "@mui/material/Button";
-
 import React from "react";
 import Image from "next/image";
-import clinic from "@/public/clinic.jpg";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 import { Stack } from "@mui/material";
-import { dosis } from "@/fonts/font";
 import ButtonTopBar from "@/app/ui/buttonTopBar";
+import { dosis } from "@/fonts/font";
+import clinic from "@/public/clinic.jpg";
 
 const pages = [
   "Começar",

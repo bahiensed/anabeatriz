@@ -1,10 +1,10 @@
-import { Box, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import logo from "@/public/logo.jpg";
+import { Box, Stack, Typography } from "@mui/material";
 import BannerTypography from "@/app/ui/bannerTypography";
 import PlaceIcon from "@mui/icons-material/Place";
 import ButtonBanner from "@/app/ui/buttonBanner";
 import ButtonBanner2 from "./buttonBanner2";
+import logo from "@/public/logo.jpg";
 
 const Banner = () => {
   return (
