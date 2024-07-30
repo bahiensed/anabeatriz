@@ -2,11 +2,10 @@
 import { Button, styled } from "@mui/material";
 import React from "react";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import { dosis } from "@/app/fonts/font";
+import { dosis } from "@/fonts/font";
 
 const BootstrapButton = styled(Button)({
   "&:hover": {
-   
     color: "#d1cec3",
   },
 });
@@ -16,11 +15,10 @@ const ButtonBanner2 = () => {
     <BootstrapButton
       className={dosis.className}
       sx={{
-       
         borderRadius: "28px",
         color: "#fff",
         fontWeight: 700,
-               width: "200px",
+        width: "200px",
         height: "58px",
       }}
     >

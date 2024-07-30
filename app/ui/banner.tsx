@@ -1,6 +1,6 @@
 import { Box, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import logo from "@/app/assets/logo.jpg";
+import logo from "@/public/logo.jpg";
 import BannerTypography from "@/app/ui/bannerTypography";
 import PlaceIcon from "@mui/icons-material/Place";
 import ButtonBanner from "@/app/ui/buttonBanner";
@@ -35,7 +35,12 @@ const Banner = () => {
             </Typography>
           </Stack>
         </Stack>
-        <Stack direction="row" justifyContent="center" spacing={1} sx={{mt:3}}>
+        <Stack
+          direction="row"
+          justifyContent="center"
+          spacing={1}
+          sx={{ mt: 3 }}
+        >
           <ButtonBanner />
           <Stack direction="column" justifyContent="center">
             <ButtonBanner2 />

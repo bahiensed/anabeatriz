@@ -9,9 +9,9 @@ import Button from "@mui/material/Button";
 
 import React from "react";
 import Image from "next/image";
-import clinic from "@/app/assets/clinic.jpg";
+import clinic from "@/public/clinic.jpg";
 import { Stack } from "@mui/material";
-import { dosis } from "@/app/fonts/font";
+import { dosis } from "@/fonts/font";
 import ButtonTopBar from "@/app/ui/buttonTopBar";
 
 const pages = [
@@ -53,7 +53,7 @@ function TopBar() {
           <Image
             src={clinic}
             alt="clinic"
-            style={{ width: "78px", height: "68px" }}
+            style={{ width: "78px", height: "80px" }}
           />
           <Stack direction="column" justifyContent="center">
             <Typography
