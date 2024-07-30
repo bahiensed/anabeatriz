@@ -1,9 +1,9 @@
-import TopBar from "@/components/menu";
+import NavBar from "@/components/NavBar";
 
 export default function Home() {
   return (
     <div>
-      <TopBar />
+      <NavBar />
     </div>
   );
 }

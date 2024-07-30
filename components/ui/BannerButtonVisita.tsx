@@ -1,32 +1,34 @@
 "use client";
 import React from "react";
 import { Button, styled } from "@mui/material";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { dosis } from "@/fonts/font";
 
 const BootstrapButton = styled(Button)({
   "&:hover": {
-    backgroundColor: "#d1cec3",
-
+    backgroundColor: "#78acb1",
     color: "#fff",
   },
 });
 
-const ButtonTopBar = () => {
+const BannerButtonVisita = () => {
   return (
     <BootstrapButton
       className={dosis.className}
       sx={{
-        backgroundColor: "#047b8b",
-
-        color: "#fff",
+        backgroundColor: "#fff",
+        borderRadius: "28px",
+        color: "black",
         fontWeight: 700,
+        mt: 5,
         width: "200px",
-        height: "80px",
+        height: "58px",
       }}
     >
-      MARCAR UMA VISITA
+      <AccessTimeIcon sx={{ color: "#047b8b" }} />
+      &nbsp; MARCAR UMA VISITA
     </BootstrapButton>
   );
 };
 
-export default ButtonTopBar;
+export default BannerButtonVisita;

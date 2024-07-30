@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { Box, Stack, Typography } from "@mui/material";
-import BannerTypography from "@/components/ui/bannerTypography";
+import BannerText from "@/components/ui/BannerText";
 import PlaceIcon from "@mui/icons-material/Place";
-import ButtonBanner from "@/components/ui/buttonBanner";
-import ButtonBanner2 from "./buttonBanner2";
+import BannerButtonVisita from "@/components/ui/BannerButtonVisita";
+import BannerButtonContato from "./BannerButtonContato";
 import logo from "@/public/logo.jpg";
 
 const Banner = () => {
@@ -21,7 +21,7 @@ const Banner = () => {
             height: "200px",
           }}
         />
-        <BannerTypography />
+        <BannerText />
         <Stack
           direction="row"
           justifyContent="center"
@@ -41,9 +41,9 @@ const Banner = () => {
           spacing={1}
           sx={{ mt: 3 }}
         >
-          <ButtonBanner />
+          <BannerButtonVisita />
           <Stack direction="column" justifyContent="center">
-            <ButtonBanner2 />
+            <BannerButtonContato />
           </Stack>
         </Stack>
       </Stack>

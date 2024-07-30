@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import { dosis, openSans } from "@/fonts/font";
 
-const BannerTypography = () => {
+const BannerText = () => {
   return (
     <>
       <Typography
@@ -23,4 +23,4 @@ const BannerTypography = () => {
   );
 };
 
-export default BannerTypography;
+export default BannerText;
