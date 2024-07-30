@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Box, Stack, Typography } from "@mui/material";
-import BannerTypography from "@/app/ui/bannerTypography";
+import BannerTypography from "@/components/ui/bannerTypography";
 import PlaceIcon from "@mui/icons-material/Place";
-import ButtonBanner from "@/app/ui/buttonBanner";
+import ButtonBanner from "@/components/ui/buttonBanner";
 import ButtonBanner2 from "./buttonBanner2";
 import logo from "@/public/logo.jpg";
 

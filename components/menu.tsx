@@ -4,10 +4,10 @@ import Image from "next/image";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import { Stack } from "@mui/material";
-import ButtonTopBar from "@/app/ui/buttonTopBar";
+import Navigation from "@/constants/Navigation";
 import { dosis } from "@/fonts/font";
+import ButtonTopBar from "@/components/ui/buttonTopBar";
 import clinic from "@/public/clinic.jpg";
 
 const pages = [
@@ -67,30 +67,8 @@ function TopBar() {
             </Typography>
           </Stack>
         </Stack>
+        <Navigation />
 
-        <Stack
-          direction="row"
-          justifyContent="center"
-          className={dosis.className}
-          sx={{
-            flexGrow: 1,
-            display: { xs: "none", md: "flex" },
-          }}
-        >
-          {pages.map((page) => (
-            <Button
-              key={page}
-              onClick={handleCloseNavMenu}
-              sx={{
-                color: "black",
-                display: "block",
-                my: 2,
-              }}
-            >
-              {page}
-            </Button>
-          ))}
-        </Stack>
         <Stack direction="column" sx={{}}>
           <ButtonTopBar />
         </Stack>
