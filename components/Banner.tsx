@@ -8,7 +8,10 @@ import logo from "@/public/images/logo.png";
 
 const Banner = () => {
   return (
-    <Box sx={{ backgroundColor: "#047b8b", width: "100%", height: "600px" }}>
+    <Box
+      id="banner"
+      sx={{ backgroundColor: "#047b8b", width: "100%", height: "600px" }}
+    >
       <Stack sx={{ alignItems: "center" }}>
         <Image
           alt="logo"
