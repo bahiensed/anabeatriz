@@ -1,6 +1,6 @@
 "use client";
 import { Button, styled } from "@mui/material";
-import { dosis } from "@/fonts/font";
+import { dosis } from "@/fonts/Dosis";
 
 const BootstrapButton = styled(Button)({
   "&:hover": {

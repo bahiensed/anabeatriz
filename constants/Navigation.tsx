@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Stack } from "@mui/material";
-import { dosis } from "@/fonts/font";
+import { dosis } from "@/fonts/OpenSans";
 
 const pages = [
   "Começar",

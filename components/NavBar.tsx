@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import { Stack } from "@mui/material";
 import Navigation from "@/constants/Navigation";
 import NavBarButtonVisita from "@/components/NavBarButtonVisita";
-import { dosis } from "@/fonts/font";
+import { dosis } from "@/fonts/Dosis";
 import clinic from "@/public/images/clinic.png";
 
 function NavBar() {

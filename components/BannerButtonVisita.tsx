@@ -1,7 +1,7 @@
 "use client";
 import { Button, styled } from "@mui/material";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import { dosis } from "@/fonts/font";
+import { dosis } from "@/fonts/Dosis";
 
 const BootstrapButton = styled(Button)({
   "&:hover": {

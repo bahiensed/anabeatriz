@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
-import { dosis, openSans } from "@/fonts/font";
+import { openSans } from "@/fonts/OpenSans";
+import { dosis } from "@/fonts/Dosis";
 
 const BannerText = () => {
   return (
