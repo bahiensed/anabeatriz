@@ -6,7 +6,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Stack } from "@mui/material";
 import Navigation from "@/constants/Navigation";
-import NavBarButtonVisita from "@/components/ui/NavBarButtonVisita";
+import NavBarButtonVisita from "@/components/NavBarButtonVisita";
 import { dosis } from "@/fonts/font";
 import clinic from "@/public/clinic.jpg";
 
