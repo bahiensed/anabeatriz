@@ -8,7 +8,7 @@ import { Stack } from "@mui/material";
 import Navigation from "@/constants/Navigation";
 import NavBarButtonVisita from "@/components/NavBarButtonVisita";
 import { dosis } from "@/fonts/font";
-import clinic from "@/public/clinic.jpg";
+import clinic from "@/public/images/clinic.png";
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
