@@ -17,7 +17,7 @@ const BannerButtonVisita = () => {
       sx={{
         backgroundColor: "#fff",
         borderRadius: "28px",
-        color: "black",
+        color: "#333",
         fontWeight: 700,
         mt: 5,
         width: "200px",

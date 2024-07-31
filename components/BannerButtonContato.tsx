@@ -4,7 +4,7 @@ import { dosis } from "@/fonts/Dosis";
 
 const BootstrapButton = styled(Button)({
   "&:hover": {
-    color: "#d1cec3",
+    color: "#cab882",
   },
 });
 

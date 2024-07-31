@@ -16,7 +16,7 @@ const BannerText = () => {
       <Typography
         className={dosis.className}
         variant="h6"
-        sx={{ color: "#d1cec3", letterSpacing: "2px" }}
+        sx={{ color: "#cab882", letterSpacing: "2px" }}
       >
         ENDOCRINOLOGIA & METABOLOGIA
       </Typography>

@@ -1,11 +1,11 @@
 "use client";
-import { Button, styled } from "@mui/material";
+import React from "react";
+import { Box, Button, styled } from "@mui/material";
 import { dosis } from "@/fonts/Dosis";
 
-const BootstrapButton = styled(Button)({
+const BootstrapButton = styled(Box)({
   "&:hover": {
-    backgroundColor: "#d1cec3",
-
+    backgroundColor: "#cab882",
     color: "#fff",
   },
 });
@@ -16,11 +16,12 @@ const NavBarButtonVisita = () => {
       className={dosis.className}
       sx={{
         backgroundColor: "#047b8b",
-
         color: "#fff",
         fontWeight: 700,
+        pt:4,
         width: "200px",
         height: "80px",
+        textAlign: "center",
       }}
     >
       MARCAR UMA VISITA

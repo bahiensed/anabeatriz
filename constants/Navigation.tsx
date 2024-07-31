@@ -1,6 +1,5 @@
-import React from "react";
-import { Button, Stack } from "@mui/material";
-import { dosis } from "@/fonts/OpenSans";
+import { Button, Stack, styled } from "@mui/material";
+import { dosis } from "@/fonts/Dosis";
 
 const pages = [
   "Começar",
@@ -11,6 +10,19 @@ const pages = [
   "Galeria",
 ];
 
+const BootstrapButton = styled(Button)({
+  "&:focus": {
+    backgroundColor: "#cab882",
+    color: "#fff",
+    "&:hover": {
+      color: "#fff",
+    },
+  },
+  ":hover": {
+    color: "#cab882",
+  },
+});
+
 const Navigation = () => {
   return (
     <>
@@ -19,22 +31,27 @@ const Navigation = () => {
         justifyContent="center"
         className={dosis.className}
         sx={{
-          flexGrow: 1,
           display: { xs: "none", md: "flex" },
+          flexGrow: 1,
+          mr:12
         }}
       >
         {pages.map((page) => (
-          <Button
+          <BootstrapButton
             key={page}
+            className={dosis.className}
             /*   onClick={handleCloseNavMenu} */
             sx={{
               color: "black",
               display: "block",
+              fontSize: "12px",
+              fontWeight: 600,
+
               my: 2,
             }}
           >
             {page}
-          </Button>
+          </BootstrapButton>
         ))}
       </Stack>
     </>
