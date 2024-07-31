@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { Button, styled } from "@mui/material";
 import { dosis } from "@/fonts/font";
 
