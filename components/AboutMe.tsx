@@ -1,6 +1,5 @@
 import { Stack, Typography } from "@mui/material";
-
-import AbouMeCardPalavras from "@/components/AboutMeCardsUp";
+import AbouMeCards from "@/components/AboutMeCards";
 import { dosis } from "@/fonts/Dosis";
 
 const AboutMe = () => {
@@ -20,7 +19,7 @@ const AboutMe = () => {
       >
         INFORMAÇÕES SOBRE MIM
       </Typography>
-      <AbouMeCardPalavras />
+      <AbouMeCards />
     </Stack>
   );
 };
