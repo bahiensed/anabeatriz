@@ -26,10 +26,7 @@ const Footer = () => {
           }}
         />
       </Link>
-      <Stack sx={{mt: 3}}>
-      &#169;{year}
-      </Stack>
-      
+      <Stack sx={{ mt: 3 }}>&#169;{year}</Stack>
     </Box>
   );
 };
