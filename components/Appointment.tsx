@@ -1,9 +1,11 @@
 "use client";
+
 import Image from "next/image";
 import { Box, Container, Paper, Stack, Typography } from "@mui/material";
-import appointment from "@/public/images/appointment.png";
 import { dosis } from "@/fonts/Dosis";
-import Agenda from "./Agenda";
+import appointment from "@/public/images/appointment.png";
+import Agenda from "@/components/Agenda";
+
 const Appointment = () => {
   return (
     <Box sx={{}}>
