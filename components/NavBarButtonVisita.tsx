@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Box, Button, Stack, styled } from "@mui/material";
+import { Box, styled } from "@mui/material";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { dosis } from "@/fonts/Dosis";
 
@@ -17,7 +17,7 @@ const NavBarButtonVisita = () => {
       <BootstrapButton
         className={dosis.className}
         sx={{
-          backgroundColor: "#047b8b",
+          backgroundColor: "#038C8C",
           backgroundRadius: "none",
           color: "#fff",
           fontSize: "14px",
@@ -28,7 +28,9 @@ const NavBarButtonVisita = () => {
           height: "80px",
         }}
       >
-        <AccessTimeIcon sx={{ color: "#fff", float: "left", mt: -0.5,ml:3 }} />
+        <AccessTimeIcon
+          sx={{ color: "#fff", float: "left", mt: -0.5, ml: 3 }}
+        />
         &nbsp; MARCAR UMA VISITA
       </BootstrapButton>
     </>

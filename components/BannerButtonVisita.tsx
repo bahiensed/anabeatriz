@@ -14,25 +14,23 @@ const BootstrapButton = styled(Button)({
 const BannerButtonVisita = () => {
   return (
     <>
-    <Link 
-    href="#appointment"
-    >
-    <BootstrapButton
-      className={dosis.className}
-      sx={{
-        backgroundColor: "#fff",
-        borderRadius: "28px",
-        color: "#333",
-        fontWeight: 700,
-        mt: 5,
-        width: "200px",
-        height: "58px",
-      }}
-    >
-      <AccessTimeIcon sx={{ color: "#047b8b" }} />
-      &nbsp; MARCAR UMA VISITA
-    </BootstrapButton>
-    </Link>
+      <Link href="#appointment">
+        <BootstrapButton
+          className={dosis.className}
+          sx={{
+            backgroundColor: "#fff",
+            borderRadius: "28px",
+            color: "#333",
+            fontWeight: 700,
+            mt: 5,
+            width: "200px",
+            height: "58px",
+          }}
+        >
+          <AccessTimeIcon sx={{ color: "#047b8b" }} />
+          &nbsp; MARCAR UMA VISITA
+        </BootstrapButton>
+      </Link>
     </>
   );
 };

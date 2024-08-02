@@ -1,142 +1,314 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import { DataGrid, DataGridProps, GridColDef } from '@mui/x-data-grid';
+import { dosis } from "@/fonts/Dosis";
+import { openSans } from "@/fonts/OpenSans";
+import { Box, Button, Paper, Stack, styled, Typography } from "@mui/material";
 
-const items = [
-  { id: 1, item: 'Paperclip', quantity: 100, price: 1.99 },
-  { id: 2, item: 'Paper', quantity: 10, price: 30 },
-  { id: 3, item: 'Pencil', quantity: 100, price: 1.25 },
-];
-
-type Item = (typeof items)[number];
-
-interface SubtotalHeader {
-  id: 'SUBTOTAL';
-  label: string;
-  subtotal: number;
-}
-
-interface TaxHeader {
-  id: 'TAX';
-  label: string;
-  taxRate: number;
-  taxTotal: number;
-}
-
-interface TotalHeader {
-  id: 'TOTAL';
-  label: string;
-  total: number;
-}
-
-type Row = Item | SubtotalHeader | TaxHeader | TotalHeader;
-
-const rows: Row[] = [
-  ...items,
-  { id: 'SUBTOTAL', label: 'Subtotal', subtotal: 624 },
-  { id: 'TAX', label: 'Tax', taxRate: 10, taxTotal: 62.4 },
-  { id: 'TOTAL', label: 'Total', total: 686.4 },
-];
-
-const baseColumnOptions = {
-  sortable: false,
-  pinnable: false,
-  hideable: false,
-};
-
-const columns: GridColDef<Row>[] = [
-  {
-    field: 'item',
-    headerName: 'Item/Description',
-    ...baseColumnOptions,
-    flex: 3,
-    colSpan: (value, row) => {
-      if (row.id === 'SUBTOTAL' || row.id === 'TOTAL') {
-        return 3;
-      }
-      if (row.id === 'TAX') {
-        return 2;
-      }
-      return undefined;
+const Agenda = () => {
+  const BootstrapButton = styled(Button)({
+    ":hover": {
+      backgroundColor: "#cab882",
+      color: "#fff",
     },
-    valueGetter: (value, row) => {
-      if (row.id === 'SUBTOTAL' || row.id === 'TAX' || row.id === 'TOTAL') {
-        return row.label;
-      }
-      return value;
-    },
-  },
-  {
-    field: 'segunda',
-    headerName: 'Segunda',
-    ...baseColumnOptions,
-    flex: 1,
-    sortable: false,
-  },
-  {
-    field: 'terça',
-    headerName: 'Terça',
-    flex: 1,
-    ...baseColumnOptions,
-    valueGetter: (value, row) => {
-      if (row.id === 'TAX') {
-        return `${row.taxRate}%`;
-      }
-      return value;
-    },
-  },
-  {
-    field: 'quarta',
-    headerName: 'Quarta',
-    flex: 1,
-    ...baseColumnOptions,
-    valueGetter: (value, row) => {
-      if (row.id === 'SUBTOTAL') {
-        return row.subtotal;
-      }
-      if (row.id === 'TAX') {
-        return row.taxTotal;
-      }
-      if (row.id === 'TOTAL') {
-        return row.total;
-      }
-      return row.price * row.quantity;
-    },
-  },
-];
+  });
 
-const getCellClassName: DataGridProps['getCellClassName'] = ({ row, field }) => {
-  if (row.id === 'SUBTOTAL' || row.id === 'TOTAL' || row.id === 'TAX') {
-    if (field === 'item') {
-      return 'bold';
-    }
-  }
-  return '';
-};
-
-export default function Agenda() {
   return (
-    <Box
+    <Stack
       sx={{
-        width: '70%',
-        position:"absolute",
-        mt:"600px",
-        '& .bold': {
-          fontWeight: 600,
-        },
+        backgroundColor: "#038C8C",
+        mt: "500px",
+        width: "1150px",
+        height: "350px",
+        position: "absolute",
+        textAlign: "center",
       }}
     >
-      <DataGrid
-        autoHeight
-        disableColumnFilter
-        disableRowSelectionOnClick
-        hideFooter
-        showCellVerticalBorder
-        showColumnVerticalBorder
-        getCellClassName={getCellClassName}
-        columns={columns}
-        rows={rows}
-      />
-    </Box>
+      <Typography
+        className={dosis.className}
+        sx={{
+          color: "#fff",
+          fontSize: "30px",
+          fontWeight: 100,
+          mt: 5,
+          lineHeight: 1.1,
+        }}
+      >
+        Selecionar a data conveniente e marcar uma consulta!
+      </Typography>
+      <Box
+        sx={{
+          alignItems: "center",
+          justifyContent: "center",
+          display: "flex",
+          flexWrap: "wrap",
+          "& > :not(style)": {
+            m: 0.3,
+            mt: 5,
+            width: 158,
+            height: 188,
+          },
+        }}
+      >
+        <Paper id="appointment" elevation={0}>
+          <Typography
+            className={dosis.className}
+            sx={{
+              fontSize: "16px",
+              fontWeight: 700,
+              mt: 2,
+              letterSpacing: "0.05em",
+            }}
+          >
+            SEGUNDA-FEIRA
+          </Typography>
+          <BootstrapButton
+            className={openSans.className}
+            sx={{
+              color: "#333",
+              fontSize: "14px",
+              fontWeight: 700,
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            09:00
+          </BootstrapButton>
+          <BootstrapButton
+            className={openSans.className}
+            sx={{
+              color: "#333",
+              fontSize: "14px",
+              fontWeight: 700,
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            10:00
+          </BootstrapButton>
+        </Paper>
+        <Paper elevation={0}>
+          <Typography
+            className={dosis.className}
+            sx={{
+              fontSize: "16px",
+              fontWeight: 700,
+              mt: 2,
+              letterSpacing: "0.05em",
+            }}
+          >
+            TERÇA-FEIRA
+          </Typography>
+          <BootstrapButton
+            className={openSans.className}
+            sx={{
+              color: "#333",
+              fontSize: "14px",
+              fontWeight: 700,
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            09:00
+          </BootstrapButton>
+          <BootstrapButton
+            className={openSans.className}
+            sx={{
+              color: "#333",
+              fontSize: "14px",
+              fontWeight: 700,
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            10:00
+          </BootstrapButton>
+        </Paper>
+        <Paper elevation={0}>
+          <Typography
+            className={dosis.className}
+            sx={{
+              fontSize: "16px",
+              fontWeight: 700,
+              mt: 2,
+              letterSpacing: "0.05em",
+            }}
+          >
+            QUARTA-FEIRA
+          </Typography>
+          <BootstrapButton
+            className={openSans.className}
+            sx={{
+              color: "#333",
+              fontSize: "14px",
+              fontWeight: 700,
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            09:00
+          </BootstrapButton>
+          <BootstrapButton
+            className={openSans.className}
+            sx={{
+              color: "#333",
+              fontSize: "14px",
+              fontWeight: 700,
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            10:00
+          </BootstrapButton>
+        </Paper>
+        <Paper elevation={0}>
+          <Typography
+            className={dosis.className}
+            sx={{
+              fontSize: "16px",
+              fontWeight: 700,
+              mt: 2,
+              letterSpacing: "0.05em",
+            }}
+          >
+            QUINTA-FEIRA
+          </Typography>
+          <BootstrapButton
+            className={openSans.className}
+            sx={{
+              color: "#333",
+              fontSize: "14px",
+              fontWeight: 700,
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            09:00
+          </BootstrapButton>{" "}
+          <BootstrapButton
+            className={openSans.className}
+            sx={{
+              color: "#333",
+              fontSize: "14px",
+              fontWeight: 700,
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            10:00
+          </BootstrapButton>
+        </Paper>
+        <Paper elevation={0}>
+          <Typography
+            className={dosis.className}
+            sx={{
+              fontSize: "16px",
+              fontWeight: 700,
+              mt: 2,
+              letterSpacing: "0.05em",
+            }}
+          >
+            SEXTA-FEIRA
+          </Typography>
+          <BootstrapButton
+            className={openSans.className}
+            sx={{
+              color: "#333",
+              fontSize: "14px",
+              fontWeight: 700,
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            09:00
+          </BootstrapButton>
+          <BootstrapButton
+            className={openSans.className}
+            sx={{
+              color: "#333",
+              fontSize: "14px",
+              fontWeight: 700,
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            10:00
+          </BootstrapButton>
+        </Paper>
+        <Paper elevation={0}>
+          <Typography
+            className={dosis.className}
+            sx={{
+              fontSize: "16px",
+              fontWeight: 700,
+              mt: 2,
+              letterSpacing: "0.05em",
+            }}
+          >
+            SÁBADO
+          </Typography>
+          <BootstrapButton
+            className={openSans.className}
+            sx={{
+              color: "#333",
+              fontSize: "14px",
+              fontWeight: 700,
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            09:00
+          </BootstrapButton>
+          <BootstrapButton
+            className={openSans.className}
+            sx={{
+              color: "#333",
+              fontSize: "14px",
+              fontWeight: 700,
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            10:00
+          </BootstrapButton>
+        </Paper>
+        <Paper elevation={0}>
+          <Typography
+            className={dosis.className}
+            sx={{
+              fontSize: "16px",
+              fontWeight: 700,
+              mt: 2,
+              letterSpacing: "0.05em",
+            }}
+          >
+            DOMINGO
+          </Typography>
+          <BootstrapButton
+            className={openSans.className}
+            sx={{
+              color: "#333",
+              fontSize: "14px",
+              fontWeight: 700,
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            09:00
+          </BootstrapButton>
+          <BootstrapButton
+            className={openSans.className}
+            sx={{
+              color: "#333",
+              fontSize: "14px",
+              fontWeight: 700,
+              mt: 2,
+              lineHeight: 1.5,
+            }}
+          >
+            10:00
+          </BootstrapButton>
+        </Paper>
+      </Box>
+    </Stack>
   );
-}
+};
+
+export default Agenda;

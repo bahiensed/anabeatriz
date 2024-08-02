@@ -1,6 +1,6 @@
-import { ArrowCircleUpOutlined } from "@mui/icons-material";
-import { Box, Stack } from "@mui/material";
 import Link from "next/link";
+import { Box, Stack } from "@mui/material";
+import { ArrowCircleUpOutlined } from "@mui/icons-material";
 
 const Footer = () => {
   const date = new Date();

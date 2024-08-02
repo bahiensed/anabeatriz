@@ -1,18 +1,19 @@
-import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import { Container, Stack, Typography } from "@mui/material";
-import ContentPasteIcon from "@mui/icons-material/ContentPaste";
-import HowToRegIcon from "@mui/icons-material/HowToReg";
-import ChatIcon from "@mui/icons-material/Chat";
-import LanguageIcon from "@mui/icons-material/Language";
-import MonitorHeartIcon from "@mui/icons-material/MonitorHeart";
-import SchoolIcon from "@mui/icons-material/School";
-import ArticleIcon from "@mui/icons-material/Article";
-import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
-import FilterDramaIcon from "@mui/icons-material/FilterDrama";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import {
+  Article,
+  Chat,
+  ContentPaste,
+  EmojiEvents,
+  Facebook,
+  FilterDrama,
+  HowToReg,
+  Instagram,
+  Language,
+  LinkedIn,
+  MonitorHeart,
+  School,
+} from "@mui/icons-material";
 import { dosis } from "@/fonts/Dosis";
 import { openSans } from "@/fonts/OpenSans";
 
@@ -43,7 +44,7 @@ export default function AbouMeCardsUp() {
               pb: 5,
             }}
           >
-            <ChatIcon
+            <Chat
               sx={{
                 color: "#cab882",
                 display: "center",
@@ -92,7 +93,7 @@ export default function AbouMeCardsUp() {
               pb: 5,
             }}
           >
-            <EmojiEventsIcon
+            <EmojiEvents
               sx={{
                 color: "#cab882",
                 display: "center",
@@ -132,7 +133,7 @@ export default function AbouMeCardsUp() {
               pb: 5,
             }}
           >
-            <FilterDramaIcon
+            <FilterDrama
               sx={{
                 color: "#cab882",
                 display: "center",
@@ -152,19 +153,19 @@ export default function AbouMeCardsUp() {
               REDES SOCIAIS
             </Typography>
             <Container>
-              <FacebookIcon
+              <Facebook
                 sx={{
                   color: "#213553",
                   fontSize: "38px",
                 }}
               />
-              <InstagramIcon
+              <Instagram
                 sx={{
                   color: "#4f86ac",
                   fontSize: "38px",
                 }}
               />
-              <LinkedInIcon
+              <LinkedIn
                 sx={{
                   color: "#008bc2",
                   fontSize: "38px",
@@ -181,7 +182,7 @@ export default function AbouMeCardsUp() {
               pb: 5,
             }}
           >
-            <ContentPasteIcon
+            <ContentPaste
               sx={{
                 color: "#cab882",
                 display: "center",
@@ -225,7 +226,7 @@ export default function AbouMeCardsUp() {
               pb: 5,
             }}
           >
-            <LanguageIcon
+            <Language
               sx={{
                 color: "#cab882",
                 display: "center",
@@ -266,7 +267,7 @@ export default function AbouMeCardsUp() {
               pb: 5,
             }}
           >
-            <MonitorHeartIcon
+            <MonitorHeart
               sx={{
                 color: "#cab882",
                 display: "center",
@@ -318,7 +319,7 @@ export default function AbouMeCardsUp() {
               pb: 5,
             }}
           >
-            <HowToRegIcon
+            <HowToReg
               sx={{
                 color: "#cab882",
                 display: "center",
@@ -359,7 +360,7 @@ export default function AbouMeCardsUp() {
               pb: 5,
             }}
           >
-            <SchoolIcon
+            <School
               sx={{
                 color: "#cab882",
                 display: "center",
@@ -403,7 +404,7 @@ export default function AbouMeCardsUp() {
               pb: 5,
             }}
           >
-            <ArticleIcon
+            <Article
               sx={{
                 color: "#cab882",
                 display: "center",
