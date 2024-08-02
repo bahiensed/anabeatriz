@@ -2,6 +2,7 @@
 import { Button, styled } from "@mui/material";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { dosis } from "@/fonts/Dosis";
+import Link from "next/link";
 
 const BootstrapButton = styled(Button)({
   "&:hover": {
@@ -12,6 +13,10 @@ const BootstrapButton = styled(Button)({
 
 const BannerButtonVisita = () => {
   return (
+    <>
+    <Link 
+    href="#appointment"
+    >
     <BootstrapButton
       className={dosis.className}
       sx={{
@@ -27,6 +32,8 @@ const BannerButtonVisita = () => {
       <AccessTimeIcon sx={{ color: "#047b8b" }} />
       &nbsp; MARCAR UMA VISITA
     </BootstrapButton>
+    </Link>
+    </>
   );
 };
 

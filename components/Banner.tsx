@@ -45,7 +45,11 @@ const Banner = () => {
           sx={{ mt: 3 }}
         >
           <BannerButtonVisita />
-          <Stack direction="column" justifyContent="center">
+          <Stack direction="column" justifyContent="center"
+          sx={{
+            pt:4
+          }}
+          >
             <BannerButtonContato />
           </Stack>
         </Stack>
