@@ -1,8 +1,9 @@
 "use client";
+import Link from "next/link";
 import { Button, styled } from "@mui/material";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import { dosis } from "@/fonts/Dosis";
-import Link from "next/link";
 
 const BootstrapButton = styled(Button)({
   "&:hover": {
@@ -11,28 +12,29 @@ const BootstrapButton = styled(Button)({
   },
 });
 
-const BannerButtonVisita = () => {
+const AppointmentButtonLigar = () => {
   return (
     <>
       <Link href="#appointment">
         <BootstrapButton
           className={dosis.className}
           sx={{
-            backgroundColor: "#fff",
+            backgroundColor: "#038C8C",
             borderRadius: "28px",
-            color: "#333",
+            color: "#fff",
             fontWeight: 700,
-            mt: 5,
+            mt: 3,
+            ml: 4,
             width: "200px",
-            height: "58px",
+            height: "48px",
           }}
         >
-          <AccessTimeIcon sx={{ color: "#047b8b" }} />
-          &nbsp; MARCAR UMA VISITA
+          <PhoneIphoneIcon sx={{ color: "#add9d4" }} />
+          &nbsp; Ligar ao especialista
         </BootstrapButton>
       </Link>
     </>
   );
 };
 
-export default BannerButtonVisita;
+export default AppointmentButtonLigar;
