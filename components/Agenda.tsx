@@ -1,6 +1,6 @@
+import { Box, Button, Paper, Stack, styled, Typography } from "@mui/material";
 import { dosis } from "@/fonts/Dosis";
 import { openSans } from "@/fonts/OpenSans";
-import { Box, Button, Paper, Stack, styled, Typography } from "@mui/material";
 
 const Agenda = () => {
   const BootstrapButton = styled(Button)({
@@ -12,10 +12,12 @@ const Agenda = () => {
 
   return (
     <Stack
+ 
       sx={{
         backgroundColor: "#038C8C",
-        mt: "500px",
-        width: "1150px",
+        mt: "700px",
+        pb: 50,
+        width: "100%",
         height: "350px",
         position: "absolute",
         textAlign: "center",
@@ -47,7 +49,7 @@ const Agenda = () => {
           },
         }}
       >
-        <Paper id="appointment" elevation={0}>
+        <Paper elevation={0}>
           <Typography
             className={dosis.className}
             sx={{
