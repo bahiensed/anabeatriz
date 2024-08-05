@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { Box, Button, Paper, Stack, styled, Typography } from "@mui/material";
+import AppointmentButtonVejaMais from "./AppointmentButtonVejaMais";
 import { dosis } from "@/fonts/Dosis";
 import { openSans } from "@/fonts/OpenSans";
 
@@ -12,7 +14,6 @@ const Agenda = () => {
 
   return (
     <Stack
- 
       sx={{
         backgroundColor: "#038C8C",
         mt: "700px",
@@ -309,6 +310,7 @@ const Agenda = () => {
           </BootstrapButton>
         </Paper>
       </Box>
+      <AppointmentButtonVejaMais />
     </Stack>
   );
 };
