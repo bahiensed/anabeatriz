@@ -1,20 +1,21 @@
 import Image from "next/image";
 import { Stack, Typography } from "@mui/material";
+import BannerAppointmentContato from "./BannerButtonAppointmentContato";
+import BannerButtonVisita from "./BannerButtonVisita";
 import appointment from "@/public/images/appointment.png";
 import logo from "@/public/images/logo.png";
 import { dosis } from "@/fonts/Dosis";
-import BannerButtonVisita from "./BannerButtonVisita";
-import BannerButtonContato from "./BannerButtonContato";
-import BannerAppointmentContato from "./BannerButtonAppointmentContato";
 
 const BannerAppointment = () => {
   return (
     <>
       <Stack sx={{ alignItems: "center", mt: 10 }}>
-        <Image alt="bannerAppointment" src={appointment} 
-        style={{
-            height:"600px"
-        }}
+        <Image
+          alt="bannerAppointment"
+          src={appointment}
+          style={{
+            height: "600px",
+          }}
         />
         <Image
           alt="logo"
