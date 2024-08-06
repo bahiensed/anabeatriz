@@ -1,13 +1,18 @@
 "use client";
 
+import Image from "next/image";
 import Box from "@mui/material/Box";
-import { styled, Paper, Typography } from "@mui/material";
+import { styled, Paper, Typography, Container, Stack } from "@mui/material";
 import Masonry from "@mui/lab/Masonry";
 import type {} from "@mui/lab/themeAugmentation";
 import "@mui/lab/themeAugmentation";
+import HalfRating from "@/components/Rating";
+import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
+import doctorImage from "@/public/images/doctorImage.png";
 import { dosis } from "@/fonts/Dosis";
+import { openSans } from "@/fonts/OpenSans";
 
-const heights = [200, 200, 200, 150, 200, 150, 200, 150, 200, 150];
+const heights = [300, 300, 300, 250, 300, 250, 300, 250, 300, 250];
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#eee",
@@ -56,17 +61,46 @@ export default function SocialProof() {
       >
         {heights.map((height, index) => (
           <Item key={index} sx={{ height }}>
-            <Typography
+            <Container
               sx={{
-                float: "left",
+                mt: 5,
               }}
             >
-              Lorem ipsum dolor sit amet. Sit quis nemo eos praesentium internos
-              sed impedit obcaecati et nobis magnam. In sapiente debitis et
-              magni maxime ex deserunt fuga et voluptatem laborum. Id provident
-              porro ea aliquam Quis sed nesciunt Quis et voluptas distinctio non
-              quia numquam.{" "}
-            </Typography>
+              <Stack direction="row">
+              <Stack direction="column">
+                  <FormatQuoteIcon />
+                </Stack>
+                <Typography
+                  className={openSans.className}
+                  sx={{
+                    color: "#333",
+                    fontSize: "18px",
+                    lineHeight: 1.7,
+                    position: "relative",
+                    width: "100%",
+                    textAlign: "left",
+                  }}
+                >
+                  Lorem ipsum dolor sit amet. Sit quis nemo eos praesentium
+                  internos sed impedit obcaecati et nobis magnam.{" "}
+                </Typography>
+               
+              </Stack>
+
+              <Stack direction="row" spacing={2}>
+                <Image
+                  alt="Doctor Image"
+                  src={doctorImage}
+                  style={{
+                    borderRadius: "50px",
+                    marginTop: 25,
+                  }}
+                />
+                <Stack direction="column" justifyContent="center">
+                  <HalfRating />
+                </Stack>
+              </Stack>
+            </Container>
           </Item>
         ))}
       </Masonry>
