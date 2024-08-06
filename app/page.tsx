@@ -1,5 +1,6 @@
 import AboutMe from "@/components/AboutMe";
 import Appointment from "@/components/Appointment";
+import Galery from "@/components/Galery";
 import NavBar from "@/components/NavBar";
 import Price from "@/components/Price";
 import SocialProof from "@/components/SocialProof";
@@ -12,6 +13,7 @@ export default function Home() {
       <Appointment />
       <Price />
       <SocialProof />
+      <Galery />
     </div>
   );
 }
