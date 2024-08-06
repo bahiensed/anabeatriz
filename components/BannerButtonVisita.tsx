@@ -27,6 +27,7 @@ const BannerButtonVisita = () => {
             mt: 5,
             width: "200px",
             height: "58px",
+           
           }}
         >
           <AccessTimeIcon sx={{ color: "#047b8b" }} />
