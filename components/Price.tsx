@@ -34,6 +34,7 @@ export default function Price() {
           color: "#333",
           fontSize: "36px",
           fontWeight: 500,
+          mt: 10,
           lineHeight: 1.1,
           textAlign: "center",
         }}
@@ -55,7 +56,7 @@ export default function Price() {
           <TableBody>
             {rows.map((row) => (
               <TableRow
-                key={row.name}
+                //key={row.price}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
                 <TableCell
@@ -72,7 +73,7 @@ export default function Price() {
                   {row.name}
                 </TableCell>
                 <TableCell
-                align="right"
+                  align="right"
                   className={openSans.className}
                   sx={{
                     color: "#43aae6",
