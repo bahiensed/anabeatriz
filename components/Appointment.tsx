@@ -5,6 +5,7 @@ import { Box, Paper, Stack, Typography } from "@mui/material";
 import Agenda from "@/components/Agenda";
 import { dosis } from "@/fonts/Dosis";
 import appointment from "@/public/images/appointment.png";
+import OnlineAppointments from "./OnlineAppointments";
 
 const Appointment = () => {
   return (
@@ -87,13 +88,13 @@ const Appointment = () => {
         {/* </Paper> */}
 
         <Agenda />
-
+        <OnlineAppointments />
         <Image
           src={appointment}
           alt="appointment"
           style={{
             paddingBottom: 20,
-            height: "1300px",
+            height: "1550px",
           }}
         />
       </Stack>
