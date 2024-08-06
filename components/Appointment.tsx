@@ -94,7 +94,7 @@ const Appointment = () => {
           alt="appointment"
           style={{
             paddingBottom: 20,
-            height: "1550px",
+            height: "1730px",
           }}
         />
       </Stack>

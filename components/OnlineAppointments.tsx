@@ -1,11 +1,9 @@
 "use client"
 
-import { useState } from "react";
 import { Stack, Typography } from "@mui/material";
 import AppointmentButtonLigar from "@/components/AppointmentButtonLigar";
-import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import { dosis } from "@/fonts/Dosis";
-import { openSans } from "@/fonts/OpenSans";
+
 
 
 const OnlineAppointments = () => {

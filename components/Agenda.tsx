@@ -1,6 +1,5 @@
-import Link from "next/link";
 import { Box, Button, Paper, Stack, styled, Typography } from "@mui/material";
-import AppointmentButtonVejaMais from "./AppointmentButtonVejaMais";
+import AppointmentButtonVejaMais from "@/components/AppointmentButtonVejaMais";
 import { dosis } from "@/fonts/Dosis";
 import { openSans } from "@/fonts/OpenSans";
 
