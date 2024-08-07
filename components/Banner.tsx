@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { Box, Stack, Typography } from "@mui/material";
+import BannerButtonContato from "@/components/BannerButtonContato";
+import BannerButtonVisita from "@/components/BannerButtonVisita";
 import BannerText from "@/components/BannerText";
 import PlaceIcon from "@mui/icons-material/Place";
-import BannerButtonVisita from "@/components/BannerButtonVisita";
-import BannerButtonContato from "./BannerButtonContato";
-import logo from "@/public/images/logo.png";
+import anabeatriz from "@/public/images/anabeatriz.jpg";
 
 const Banner = () => {
   return (
@@ -15,13 +15,13 @@ const Banner = () => {
       <Stack sx={{ alignItems: "center" }}>
         <Image
           alt="logo"
-          src={logo}
+          src={anabeatriz}
           style={{
             border: "5px solid white",
             borderRadius: "100px",
+            height: "200px",
             marginTop: "80px",
             width: "200px",
-            height: "200px",
           }}
         />
         <BannerText />
@@ -33,7 +33,12 @@ const Banner = () => {
         >
           <PlaceIcon sx={{ color: "#fff" }} />
           <Stack direction="column" justifyContent="center">
-            <Typography sx={{ color: "#fff", fontWeight: 700 }}>
+            <Typography
+              sx={{
+                color: "#fff",
+                fontWeight: 700,
+              }}
+            >
               PETRÓPOLIS
             </Typography>
           </Stack>
@@ -45,11 +50,7 @@ const Banner = () => {
           sx={{ mt: 3 }}
         >
           <BannerButtonVisita />
-          <Stack direction="column" justifyContent="center"
-          sx={{
-            pt:4
-          }}
-          >
+          <Stack direction="column" justifyContent="center" sx={{ pt: 4 }}>
             <BannerButtonContato />
           </Stack>
         </Stack>
