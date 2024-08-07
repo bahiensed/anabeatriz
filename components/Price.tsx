@@ -5,7 +5,6 @@ import {
   TableBody,
   TableCell,
   TableContainer,
-  TableHead,
   TableRow,
   Typography,
 } from "@mui/material";
@@ -29,6 +28,7 @@ export default function Price() {
   return (
     <>
       <Typography
+        id="price"
         className={dosis.className}
         sx={{
           color: "#333",

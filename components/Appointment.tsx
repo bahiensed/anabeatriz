@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { Box, Paper, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import Agenda from "@/components/Agenda";
-import { dosis } from "@/fonts/Dosis";
 import appointment from "@/public/images/appointment.png";
-import OnlineAppointments from "./OnlineAppointments";
+import OnlineAppointments from "@/components/OnlineAppointments";
+import { dosis } from "@/fonts/Dosis";
 
 const Appointment = () => {
   return (
@@ -16,11 +16,13 @@ const Appointment = () => {
       }}
     >
       <Stack
+        id="contact"
         sx={{
           alignItems: "center",
         }}
       >
         <Typography
+          id="map"
           className={dosis.className}
           sx={{
             color: "#333",
@@ -93,8 +95,8 @@ const Appointment = () => {
           src={appointment}
           alt="appointment"
           style={{
-            paddingBottom: 20,
             height: "1730px",
+            paddingBottom: 20,
           }}
         />
       </Stack>

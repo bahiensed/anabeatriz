@@ -3,22 +3,23 @@
 import { Button, styled } from "@mui/material";
 import { dosis } from "@/fonts/Dosis";
 
-const BootstrapButton = styled(Button)({
-  "&:hover": {
-    color: "#cab882",
-  },
-});
+const BannerButtonAppointmentContato = () => {
+  const BootstrapButton = styled(Button)({
+    "&:hover": {
+      color: "#cab882",
+    },
+  });
 
-const BannerButtonContato = () => {
   return (
     <BootstrapButton
       href="#appointment"
       className={dosis.className}
       sx={{
-        color: "#fff",
+        background: "none",
+        color: "#333",
+        height: "58px",
         fontWeight: 700,
         width: "200px",
-        height: "58px",
       }}
     >
       ENTRE EM CONTATO
@@ -26,4 +27,4 @@ const BannerButtonContato = () => {
   );
 };
 
-export default BannerButtonContato;
+export default BannerButtonAppointmentContato;

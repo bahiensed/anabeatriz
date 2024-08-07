@@ -5,7 +5,6 @@ import { Button, styled } from "@mui/material";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { dosis } from "@/fonts/Dosis";
 
-
 const BootstrapButton = styled(Button)({
   "&:hover": {
     backgroundColor: "#78acb1",
@@ -24,9 +23,9 @@ const BannerButtonVisita = () => {
             borderRadius: "28px",
             color: "#333",
             fontWeight: 700,
+            height: "58px",
             mt: 5,
             width: "200px",
-            height: "58px",
           }}
         >
           <AccessTimeIcon sx={{ color: "#047b8b" }} />
