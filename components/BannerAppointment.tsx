@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Stack, Typography } from "@mui/material";
-import BannerAppointmentContato from "./BannerButtonAppointmentContato";
-import BannerButtonVisita from "./BannerButtonVisita";
+import BannerAppointmentContato from "@/components/BannerAppointment";
+import BannerButtonVisita from "@/components/BannerButtonVisita";
 import appointment from "@/public/images/appointment.png";
 import logo from "@/public/images/logo.png";
 import { dosis } from "@/fonts/Dosis";
