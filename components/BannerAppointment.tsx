@@ -3,7 +3,7 @@ import { Stack, Typography } from "@mui/material";
 import BannerButtonAppointmentContato from "@/components/BannerButtonAppointmentContato";
 import BannerButtonVisita from "@/components/BannerButtonVisita";
 import appointment from "@/public/images/appointment.png";
-import logo from "@/public/images/logo.png";
+import anabeatriz from "@/public/images/anabeatriz.jpg";
 import { dosis } from "@/fonts/Dosis";
 
 const BannerAppointment = () => {
@@ -22,7 +22,7 @@ const BannerAppointment = () => {
         />
         <Image
           alt="logo"
-          src={logo}
+          src={anabeatriz}
           style={{
             border: "5px solid white",
             borderRadius: "100px",
