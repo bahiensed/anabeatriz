@@ -95,8 +95,8 @@ const Appointment = () => {
           src={appointment}
           alt="appointment"
           style={{
-            paddingBottom: 20,
             height: "1730px",
+            paddingBottom: 20,
           }}
         />
       </Stack>

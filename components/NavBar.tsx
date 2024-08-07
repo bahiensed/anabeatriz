@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { AppBar, Stack, Toolbar, Typography } from "@mui/material";
-import Navigation from "@/constants/Navigation";
+import Navigation from "@/components/Navigation";
 import NavBarButtonVisita from "@/components/NavBarButtonVisita";
 import { dosis } from "@/fonts/Dosis";
 import clinic from "@/public/images/clinic.png";
