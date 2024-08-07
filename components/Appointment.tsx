@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { Box, Paper, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import Agenda from "@/components/Agenda";
-import { dosis } from "@/fonts/Dosis";
 import appointment from "@/public/images/appointment.png";
-import OnlineAppointments from "./OnlineAppointments";
+import OnlineAppointments from "@/components/OnlineAppointments";
+import { dosis } from "@/fonts/Dosis";
 
 const Appointment = () => {
   return (
