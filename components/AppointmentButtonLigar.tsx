@@ -82,9 +82,7 @@ const AppointmentButtonLigar = () => {
             </Stack>
           </Stack>
         </>
-      ) : (
-      null
-      )}
+      ) : null}
     </>
   );
 };

@@ -25,6 +25,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function SocialProof() {
   return (
     <Box
+      id="reviews"
       sx={{
         alignItems: "center",
         justifyContent: "center",

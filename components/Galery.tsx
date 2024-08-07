@@ -21,6 +21,7 @@ const Label = styled(Paper)(({ theme }) => ({
 export default function Galery() {
   return (
     <Box
+      id="galery"
       sx={{
         alignItems: "center",
         justifyContent: "center",

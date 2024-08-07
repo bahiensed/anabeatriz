@@ -58,7 +58,7 @@ function NavBar() {
         </Stack>
         <Navigation />
 
-        <Stack direction="column" sx={{}}>
+        <Stack direction="column">
           <NavBarButtonVisita />
         </Stack>
       </Toolbar>

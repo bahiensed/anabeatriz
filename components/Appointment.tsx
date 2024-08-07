@@ -16,11 +16,13 @@ const Appointment = () => {
       }}
     >
       <Stack
+        id="contact"
         sx={{
           alignItems: "center",
         }}
       >
         <Typography
+          id="map"
           className={dosis.className}
           sx={{
             color: "#333",
