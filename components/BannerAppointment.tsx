@@ -9,13 +9,16 @@ import { dosis } from "@/fonts/Dosis";
 const BannerAppointment = () => {
   return (
     <>
-      <Stack sx={{ alignItems: "center", mt: 10 }}>
+      <Stack
+        sx={{
+          alignItems: "center",
+          mt: 10,
+        }}
+      >
         <Image
           alt="bannerAppointment"
           src={appointment}
-          style={{
-            height: "600px",
-          }}
+          style={{ height: "600px" }}
         />
         <Image
           alt="logo"
@@ -50,12 +53,7 @@ const BannerAppointment = () => {
           }}
         >
           <BannerButtonVisita />
-          <Stack
-            direction="column"
-            sx={{
-              mt: 5,
-            }}
-          >
+          <Stack direction="column" sx={{ mt: 5 }}>
             <BannerButtonAppointmentContato />
           </Stack>
         </Stack>
