@@ -31,8 +31,8 @@ export default function SocialProof() {
         backgroundColor: "#fff",
         m: "0 auto",
         mb: 10,
-        width: "100%",
         minHeight: 377,
+        width: "100%",
       }}
     >
       <Typography
@@ -41,9 +41,9 @@ export default function SocialProof() {
           color: "#333",
           fontSize: "36px",
           fontWeight: 500,
-          pt: 10,
-          pb: 10,
           lineHeight: 1.1,
+          pb: 10,
+          pt: 10,
           textAlign: "center",
         }}
       >
@@ -67,7 +67,7 @@ export default function SocialProof() {
               }}
             >
               <Stack direction="row">
-              <Stack direction="column">
+                <Stack direction="column">
                   <FormatQuoteIcon />
                 </Stack>
                 <Typography
@@ -84,7 +84,6 @@ export default function SocialProof() {
                   Lorem ipsum dolor sit amet. Sit quis nemo eos praesentium
                   internos sed impedit obcaecati et nobis magnam.{" "}
                 </Typography>
-               
               </Stack>
 
               <Stack direction="row" spacing={2}>

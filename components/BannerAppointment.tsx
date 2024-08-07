@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Stack, Typography } from "@mui/material";
-import BannerAppointmentContato from "@/components/BannerAppointment";
+import BannerButtonAppointmentContato from "@/components/BannerButtonAppointmentContato";
 import BannerButtonVisita from "@/components/BannerButtonVisita";
 import appointment from "@/public/images/appointment.png";
 import logo from "@/public/images/logo.png";
@@ -23,9 +23,9 @@ const BannerAppointment = () => {
           style={{
             border: "5px solid white",
             borderRadius: "100px",
+            height: "200px",
             marginTop: "90px",
             width: "200px",
-            height: "200px",
             position: "absolute",
           }}
         />
@@ -45,8 +45,8 @@ const BannerAppointment = () => {
         <Stack
           direction="row"
           sx={{
-            position: "absolute",
             mt: "400px",
+            position: "absolute",
           }}
         >
           <BannerButtonVisita />
@@ -56,7 +56,7 @@ const BannerAppointment = () => {
               mt: 5,
             }}
           >
-            <BannerAppointmentContato />
+            <BannerButtonAppointmentContato />
           </Stack>
         </Stack>
       </Stack>

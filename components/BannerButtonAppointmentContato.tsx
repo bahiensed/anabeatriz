@@ -15,10 +15,11 @@ const BannerButtonAppointmentContato = () => {
       href="#appointment"
       className={dosis.className}
       sx={{
+        background: "none",
         color: "#333",
+        height: "58px",
         fontWeight: 700,
         width: "200px",
-        height: "58px",
       }}
     >
       ENTRE EM CONTATO
