@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { AppBar, Stack, Toolbar, Typography } from "@mui/material";
 import Navigation from "@/components/Navigation";
@@ -9,30 +9,29 @@ import { dosis } from "@/fonts/Dosis";
 import clinic from "@/public/images/clinic.png";
 
 function NavBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
-    null
-  );
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
-    null
-  );
+  const [stickyClass, setStickyClass] = useState("");
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  useEffect(() => {
+    window.addEventListener("scroll", stickNavbar);
+    return () => window.removeEventListener("scroll", stickNavbar);
+  }, []);
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      // window height changed for the demo
+      windowHeight > 550 ? setStickyClass("sticky-nav") : setStickyClass("");
+    }
   };
 
   return (
-    <AppBar sx={{ backgroundColor: "#fff" }} position="static">
+    <AppBar
+      className={`navbar ${stickyClass}`}
+      sx={{
+        backgroundColor: "#fff",
+      }}
+      position="sticky"
+    >
       <Toolbar disableGutters>
         <Stack direction="row" justifyContent="center" spacing={2}>
           <Image

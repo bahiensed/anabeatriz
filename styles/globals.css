@@ -105,3 +105,9 @@ a {
     color-scheme: dark;
   }
 }
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}

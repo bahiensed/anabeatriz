@@ -11,7 +11,11 @@ const Banner = () => {
   return (
     <Box
       id="banner"
-      sx={{ backgroundColor: "#047b8b", width: "100%", height: "600px" }}
+      sx={{
+        backgroundColor: "#047b8b",
+        height: "600px",
+        width: "100%",
+      }}
     >
       <Stack id="start" sx={{ alignItems: "center" }}>
         <Image

@@ -92,6 +92,7 @@ const Appointment = () => {
         <Agenda />
         <OnlineAppointments />
         <Image
+          id="visit"
           src={appointment}
           alt="appointment"
           style={{
