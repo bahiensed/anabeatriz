@@ -1,5 +1,16 @@
-import Paper from "@mui/material/Paper";
-import { Container, Stack, Typography } from "@mui/material";
+"use client";
+
+import * as React from "react";
+import { styled } from "@mui/material/styles";
+import Masonry from "@mui/lab/Masonry";
+import {
+  Accordion,
+  Box,
+  Container,
+  Paper,
+  Stack,
+  Typography,
+} from "@mui/material";
 import {
   Article,
   Chat,
@@ -17,438 +28,196 @@ import {
 import { dosis } from "@/fonts/Dosis";
 import { openSans } from "@/fonts/OpenSans";
 
-export default function AbouMeCardsUp() {
+const cardsData = [
+  {
+    id: 0,
+    icon: <Chat sx={{ fontSize: "50px" }} />,
+    text1:
+      "Professora associada de Endocrinologia na faculdade de Ciências Médicas (FCM) da UERJ desde 2016.",
+    text2:
+      "Secretaria executiva da sociedade brasileira de endocrinooogia -regional RJ (2020/22 e 2023/24)",
+    text3:
+      "Coordenadora de pesquisa da Faculdade de Ciências Médicas da FCM (2024/28) professora do programa de pós-graduação em Fisiopatolologia Clínica e Experimental da FCM UERJ",
+    text4: "Ex-professora da Faculdade de Medicina de Petrópolis (2007-2023)",
+    text5: "Ex-chefe do Departamento de Medicina Interna da FCM UERJ (2021/23)",
+    text6:
+      "Médica endocrinologista do Hospital Umiversitario Pedro Ernesto da UERJ (2012-2016)",
+    title: "Poucas Palavras",
+  },
+  {
+    id: 1,
+    icon: <ContentPaste sx={{ fontSize: "50px" }} />,
+    text: "eu habitant leo potenti id interdum dolor neque ante, placerat metus bibendum commodo suscipit massa nisl posuere. neque class auctor facilisis aenean est lobortis molestie posuere, amet loborti habitant quam leo dictum quam congue, vestibulum est dictumst convallis pellentesque felis lacinia. laoreet est pharetra varius justo suspendisse lorem",
+    title: "Especialidades",
+  },
+  {
+    id: 2,
+    icon: <HowToReg sx={{ fontSize: "50px" }} />,
+    text: "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus. ",
+    title: "Número de registro",
+  },
+  {
+    id: 3,
+    icon: <School sx={{ fontSize: "50px" }} />,
+    text: "amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus. ",
+    title: "Formação",
+  },
+  {
+    id: 4,
+    icon: <Article sx={{ fontSize: "50px" }} />,
+    text: "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus.leo lectus venenat consectetur dui ad sagittis sapien integer nullam, eu habitant leo potenti id interdum dolor neque ante, placerat metus bibendum commodo suscipit massa nisl posuere. neque class auctor facilisis aenean est lobortis molestie posuere, amet loborti habitant quam leo dictum quam congue, vestibulum est dictumst convallis pellentesque felis lacinia. laoreet est pharetra varius justo suspendisse lorem",
+    title: "Publicações",
+  },
+  {
+    id: 5,
+    icon: <EmojiEvents sx={{ fontSize: "50px" }} />,
+    text: "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus. ",
+    title: "Prêmios",
+  },
+  {
+    id: 6,
+    icon: <Language sx={{ fontSize: "50px" }} />,
+    text: "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus. ",
+    title: "Idiomas",
+  },
+  {
+    id: 7,
+    icon: <FilterDrama sx={{ fontSize: "50px" }} />,
+    text: "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus. ",
+    title: "Redes sociais",
+  },
+  {
+    id: 8,
+    icon: <MonitorHeart sx={{ fontSize: "50px" }} />,
+    text: "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus. ",
+    title: "Doenças Tratadas",
+  },
+];
+
+const StyledAccordion = styled(Accordion)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  color: theme.palette.text.secondary,
+}));
+
+export default function MasonryWithVariableHeightItems() {
   return (
-    <Container
+    <Box
       sx={{
         alignItems: "center",
         justifyContent: "center",
-        color: "#333",
-        display: "flex",
-        flexWrap: "wrap",
-        width: "1500px",
-        /* "& > :not(style)": {
-          m: 1,
-          width: "350px",
-          height: "800px",
-        },
-        // textAlign: "center", */
+        m: "0 auto",
+        maxWidth: 1150,
+        minHeight: 377,
       }}
     >
-      <Stack direction="row" justifyContent="center" spacing={5}>
-        <Stack direction="column">
-          <Paper
-            elevation={0}
-            sx={{
-              maxHeight: "900px",
-              pb: 5,
-            }}
-          >
-            <Chat
-              sx={{
-                color: "#cab882",
-                display: "center",
-                fontSize: "42px",
-                margin: "0 auto",
-                mt: 5,
-              }}
-            />
-            <Typography
-              className={dosis.className}
-              sx={{
-                fontWeight: 600,
-                py: 2,
-                textAlign: "center",
-              }}
-            >
-              POUCAS PALAVRAS
-            </Typography>
+      <Masonry columns={3} spacing={4}>
+        {cardsData.map((item) => (
+          <Paper key={item.id} elevation={0} sx={{ pb: 4 }}>
             <Container>
+              <Stack
+                sx={{
+                  alignItems: "center",
+                  color: "#cab882",
+                  height: "36px",
+                  justifyContent: "center",
+                  m: "0 auto",
+                  pb: 6,
+                  pt: 8,
+                }}
+              >
+                {item.icon}
+              </Stack>
+              <Typography
+                className={dosis.className}
+                sx={{
+                  color: "#434343",
+                  fontSize: "18px",
+                  fontWeight: 600,
+                  lineHeight: 1.1,
+                  letterSpacing: "0.05rem",
+                  textAlign: "center",
+                  textTransform: "uppercase",
+                  pb: 4,
+                }}
+              >
+                {item.title}
+              </Typography>
               <Typography
                 className={openSans.className}
                 sx={{
                   color: "#434343",
                   fontSize: "16px",
+                  fontWeight: 300,
                   lineHeight: 1.4,
                 }}
               >
-                Lorem ipsum eget risus tristique odio lacus volutpat, praesent
-                ipsum torquent amet condimentum pellentesque aptent, rutrum
-                iaculis nulla arcu fames luctus. leo lectus venenatis
-                consectetur dui ad sagittis sapien integer nullam, eu habitant
-                leo potenti id interdum dolor neque ante, placerat metus
-                bibendum commodo suscipit massa nisl posuere. neque class auctor
-                facilisis aenean est lobortis molestie posuere, amet lobortis
-                habitant quam leo dictum quam congue, vestibulum est dictumst
-                convallis pellentesque felis lacinia. laoreet est pharetra
-                varius justo suspendisse lorem
+                {item.text1}
               </Typography>
-            </Container>
-          </Paper>
-          <Paper
-            elevation={0}
-            sx={{
-              maxHeight: "200px",
-              mt: 5,
-              pb: 5,
-            }}
-          >
-            <EmojiEvents
-              sx={{
-                color: "#cab882",
-                display: "center",
-                fontSize: "42px",
-                margin: "0 auto",
-                mt: 5,
-              }}
-            />
-            <Typography
-              className={dosis.className}
-              sx={{
-                fontWeight: 600,
-                py: 2,
-                textAlign: "center",
-              }}
-            >
-              PRÊMIOS
-            </Typography>
-            <Container>
               <Typography
                 className={openSans.className}
                 sx={{
                   color: "#434343",
                   fontSize: "16px",
+                  fontWeight: 300,
+                  mt: 3,
                   lineHeight: 1.4,
                 }}
               >
-                Lorem ipsum eget risus tristique odio lacus volutpat, praesent
+                {item.text2}
               </Typography>
-            </Container>
-          </Paper>
-          <Paper
-            elevation={0}
-            sx={{
-              maxHeight: "200px",
-              mt: 5,
-              pb: 5,
-            }}
-          >
-            <FilterDrama
-              sx={{
-                color: "#cab882",
-                display: "center",
-                fontSize: "42px",
-                margin: "0 auto",
-                mt: 5,
-              }}
-            />
-            <Typography
-              className={dosis.className}
-              sx={{
-                fontWeight: 600,
-                py: 2,
-                textAlign: "center",
-              }}
-            >
-              REDES SOCIAIS
-            </Typography>
-            <Container>
-              <Facebook
-                sx={{
-                  color: "#213553",
-                  fontSize: "38px",
-                }}
-              />
-              <Instagram
-                sx={{
-                  color: "#4f86ac",
-                  fontSize: "38px",
-                }}
-              />
-              <LinkedIn
-                sx={{
-                  color: "#008bc2",
-                  fontSize: "38px",
-                }}
-              />
-            </Container>
-          </Paper>
-        </Stack>
-        <Stack direction="column">
-          <Paper
-            elevation={0}
-            sx={{
-              maxHeight: "400px",
-              pb: 5,
-            }}
-          >
-            <ContentPaste
-              sx={{
-                color: "#cab882",
-                display: "center",
-                fontSize: "42px",
-                margin: "0 auto",
-                mt: 5,
-              }}
-            />
-            <Typography
-              className={dosis.className}
-              sx={{
-                fontWeight: 600,
-                py: 2,
-                textAlign: "center",
-              }}
-            >
-              ESPECIALIDADES
-            </Typography>
-            <Container>
               <Typography
                 className={openSans.className}
                 sx={{
                   color: "#434343",
                   fontSize: "16px",
+                  fontWeight: 300,
                   lineHeight: 1.4,
                 }}
               >
-                Lorem ipsum eget risus tristique odio lacus volutpat, praesent
-                ipsum torquent amet condimentum pellentesque aptent, rutrum
-                iaculis nulla arcu fames luctus. leo lectus venenatis
-                consectetur dui ad sagittis sapien integer nullam, eu habitant
-                leo potenti id
+                {item.text3}
               </Typography>
-            </Container>
-          </Paper>
-          <Paper
-            elevation={0}
-            sx={{
-              maxHeight: "300px",
-              mt: 5,
-              pb: 5,
-            }}
-          >
-            <Language
-              sx={{
-                color: "#cab882",
-                display: "center",
-                fontSize: "42px",
-                margin: "0 auto",
-                mt: 5,
-              }}
-            />
-            <Typography
-              className={dosis.className}
-              sx={{
-                fontWeight: 600,
-                py: 2,
-                textAlign: "center",
-              }}
-            >
-              IDIOMAS
-            </Typography>
-            <Container>
               <Typography
                 className={openSans.className}
                 sx={{
                   color: "#434343",
                   fontSize: "16px",
+                  fontWeight: 300,
+                  mt: 3,
                   lineHeight: 1.4,
                 }}
               >
-                Lorem ipsum eget risus tristique odio lacus volutpat, praesent
-                ipsum torquent amet condimentum pellentesque aptent, rutrum
+                {item.text4}
               </Typography>
-            </Container>
-          </Paper>
-          <Paper
-            elevation={0}
-            sx={{
-              maxHeight: "700px",
-              mt: 5,
-              pb: 5,
-            }}
-          >
-            <MonitorHeart
-              sx={{
-                color: "#cab882",
-                display: "center",
-                fontSize: "42px",
-                margin: "0 auto",
-                mt: 5,
-              }}
-            />
-            <Typography
-              className={dosis.className}
-              sx={{
-                fontWeight: 600,
-                py: 2,
-                textAlign: "center",
-              }}
-            >
-              DOENÇAS TRATADAS
-            </Typography>
-            <Container>
               <Typography
                 className={openSans.className}
                 sx={{
                   color: "#434343",
                   fontSize: "16px",
+                  fontWeight: 300,
+                  mt: 3,
                   lineHeight: 1.4,
                 }}
               >
-                Lorem ipsum eget risus tristique odio lacus volutpat, praesent
-                ipsum torquent amet condimentum pellentesque aptent, rutrum
-                iaculis nulla arcu fames luctus. leo lectus venenatis
-                consectetur dui ad sagittis sapien integer nullam, eu habitant
-                leo potenti id interdum dolor neque ante, placerat metus
-                bibendum commodo suscipit massa nisl posuere. neque class auctor
-                facilisis aenean est lobortis molestie posuere, amet lobortis
-                habitant quam leo dictum quam congue, vestibulum est dictumst
-                convallis pellentesque felis lacinia. laoreet est pharetra
-                varius justo suspendisse lorem sociosqu mi euismod, quisque
-                eleifend arcu nisl morbi bibendum facilisis curabitur turpis,
-                dolor nulla magna nunc potenti dictum suspendisse sed.
+                {item.text5}
               </Typography>
-            </Container>
-          </Paper>
-        </Stack>
-        <Stack direction="column">
-          <Paper
-            elevation={0}
-            sx={{
-              maxHeight: "300px",
-              pb: 5,
-            }}
-          >
-            <HowToReg
-              sx={{
-                color: "#cab882",
-                display: "center",
-                fontSize: "42px",
-                margin: "0 auto",
-                mt: 5,
-              }}
-            />
-            <Typography
-              className={dosis.className}
-              sx={{
-                fontWeight: 600,
-                py: 2,
-                textAlign: "center",
-              }}
-            >
-              NÚMERO DE REGISTRO
-            </Typography>
-            <Container>
               <Typography
                 className={openSans.className}
                 sx={{
                   color: "#434343",
                   fontSize: "16px",
+                  fontWeight: 300,
+                  mt: 3,
                   lineHeight: 1.4,
                 }}
               >
-                Lorem ipsum eget risus tristique odio lacus volutpat, praesent
-                ipsum torquent amet condimentum pellentesque aptent, rutrum
+                {item.text6}
               </Typography>
+            
             </Container>
           </Paper>
-          <Paper
-            elevation={0}
-            sx={{
-              maxHeight: "400px",
-              mt: 5,
-              pb: 5,
-            }}
-          >
-            <School
-              sx={{
-                color: "#cab882",
-                display: "center",
-                fontSize: "42px",
-                margin: "0 auto",
-                mt: 5,
-              }}
-            />
-            <Typography
-              className={dosis.className}
-              sx={{
-                fontWeight: 600,
-                py: 2,
-                textAlign: "center",
-              }}
-            >
-              FORMAÇÃO
-            </Typography>
-            <Container>
-              <Typography
-                className={openSans.className}
-                sx={{
-                  color: "#434343",
-                  fontSize: "16px",
-                  lineHeight: 1.4,
-                }}
-              >
-                Lorem ipsum eget risus tristique odio lacus volutpat, praesent
-                ipsum torquent amet condimentum pellentesque aptent, rutrum
-                iaculis nulla arcu fames luctus. leo lectus venenatis
-                consectetur dui ad sagittis sapien integer nullam, eu habitant
-                leo potenti id
-              </Typography>
-            </Container>
-          </Paper>
-          <Paper
-            elevation={0}
-            sx={{
-              maxHeight: "600px",
-              mt: 5,
-              pb: 5,
-            }}
-          >
-            <Article
-              sx={{
-                color: "#cab882",
-                display: "center",
-                fontSize: "42px",
-                margin: "0 auto",
-                mt: 5,
-              }}
-            />
-            <Typography
-              className={dosis.className}
-              sx={{
-                fontWeight: 600,
-                py: 2,
-                textAlign: "center",
-              }}
-            >
-              PUBLICAÇÕES
-            </Typography>
-            <Container>
-              <Typography
-                className={openSans.className}
-                sx={{
-                  color: "#434343",
-                  fontSize: "16px",
-                  lineHeight: 1.4,
-                }}
-              >
-                Lorem ipsum eget risus tristique odio lacus volutpat, praesent
-                ipsum torquent amet condimentum pellentesque aptent, rutrum
-                iaculis nulla arcu fames luctus. leo lectus venenatis
-                consectetur dui ad sagittis sapien integer nullam, eu habitant
-                leo potenti id interdum dolor neque ante, placerat metus
-                bibendum commodo suscipit massa nisl posuere. neque class auctor
-                facilisis aenean est lobortis molestie posuere, amet lobortis
-                habitant quam leo dictum quam congue, vestibulum est dictumst
-                convallis pellentesque felis lacinia. laoreet est pharetra
-                varius justo suspendisse lorem sociosqu mi euismod, quisque
-                eleifend arcu nisl morbi bibendum facilisis curabitur turpis,
-                dolor nulla magna nunc potenti dictum suspendisse sed.
-              </Typography>
-            </Container>
-          </Paper>
-        </Stack>
-      </Stack>
-    </Container>
+        ))}
+      </Masonry>
+    </Box>
   );
 }
+
