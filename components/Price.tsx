@@ -1,6 +1,7 @@
 import * as React from "react";
 import {
   Paper,
+  Stack,
   Table,
   TableBody,
   TableCell,
@@ -28,7 +29,6 @@ export default function Price() {
   return (
     <>
       <Typography
-        id="price"
         className={dosis.className}
         sx={{
           color: "#333",
@@ -72,6 +72,7 @@ export default function Price() {
                 >
                   {row.name}
                 </TableCell>
+
                 <TableCell
                   align="right"
                   className={openSans.className}

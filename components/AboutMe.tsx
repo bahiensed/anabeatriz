@@ -4,7 +4,7 @@ import { dosis } from "@/fonts/Dosis";
 
 const AboutMe = () => {
   return (
-    <Stack id="aboutme" sx={{ py: 10 }}>
+    <Stack sx={{ py: 10 }}>
       <Typography
         className={dosis.className}
         sx={{
