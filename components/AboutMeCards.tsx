@@ -58,8 +58,9 @@ const cardsData = [
   {
     id: 2,
     icon: <HowToReg sx={{ fontSize: "50px" }} />,
-    text1:
-      "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus. ",
+    text1: "CRM RJ 737470",
+    text2: "RQE Endocrinologia e Metabologia 14091",
+    text3: "RQE Clínica Médica 15964",
     title: "Número de registro",
   },
   {
@@ -118,7 +119,7 @@ export default function MasonryWithVariableHeightItems() {
         alignItems: "center",
         justifyContent: "center",
         m: "0 auto",
-        maxWidth: 1150,
+        width: 1150,
         minHeight: 377,
       }}
     >
@@ -183,7 +184,7 @@ export default function MasonryWithVariableHeightItems() {
                   color: "#434343",
                   fontSize: "16px",
                   fontWeight: 300,
-                  mt:3,
+                  mt: 3,
                   lineHeight: 1.4,
                 }}
               >
