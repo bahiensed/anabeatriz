@@ -1,46 +1,43 @@
-"use client"
+"use client";
 
 import { Stack, Typography } from "@mui/material";
 import AppointmentButtonLigar from "@/components/AppointmentButtonLigar";
 import { dosis } from "@/fonts/Dosis";
 
-
-
 const OnlineAppointments = () => {
-
-
-
   return (
-    <Stack
-      sx={{
-        backgroundColor: "#fff",
-        mt: "1150px",
-        position: "absolute",
-        width: "100%",
-        height: "350px",
-      }}
-    >
+    <>
       <Stack
         sx={{
-          alignItems: "center",
-          mt: 4,
+          backgroundColor: "#fff",
+          mt: "1150px",
+          position: "absolute",
+          width: "100%",
+          height: "350px",
         }}
       >
-        <Typography
-          className={dosis.className}
+        <Stack
           sx={{
-            color: "#333",
-            fontSize: "30px",
-            mt: 5,
-            lineHeight: 1.1,
+            alignItems: "center",
+            mt: 4,
           }}
         >
-          Telemedicina (Consultas Online)
-        </Typography>
-        <AppointmentButtonLigar/>
-      
+          <Typography
+            id="price"
+            className={dosis.className}
+            sx={{
+              color: "#333",
+              fontSize: "30px",
+              mt: 5,
+              lineHeight: 1.1,
+            }}
+          >
+            Telemedicina (Consultas Online)
+          </Typography>
+          <AppointmentButtonLigar />
+        </Stack>
       </Stack>
-    </Stack>
+    </>
   );
 };
 

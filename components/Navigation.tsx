@@ -2,15 +2,6 @@ import Link from "next/link";
 import { Button, Stack, styled } from "@mui/material";
 import { dosis } from "@/fonts/Dosis";
 
-const pages = [
-  "Começar",
-  "Sobre mim",
-  "Contato",
-  "Preço",
-  "Reviews",
-  "Galeria",
-];
-
 const BootstrapButton = styled(Button)({
   "&:focus": {
     backgroundColor: "#cab882",

@@ -32,7 +32,7 @@ function NavBar() {
       }}
       position="sticky"
     >
-      <Toolbar disableGutters>
+      <Toolbar id="aboutme" disableGutters>
         <Stack direction="row" justifyContent="center" spacing={2}>
           <Image
             src={clinic}
