@@ -35,7 +35,7 @@ const Appointment = () => {
             zIndex: 1,
           }}
         >
-          MARCAR UMA VISITA
+          MARCAR CONSULTA
         </Typography>
 
         {/*   <Paper

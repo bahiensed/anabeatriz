@@ -7,7 +7,7 @@ import Navigation from "@/components/Navigation";
 import NavBarButtonVisita from "@/components/NavBarButtonVisita";
 import ArrowCircleDown from "@mui/icons-material/ArrowCircleDown";
 import { dosis } from "@/fonts/Dosis";
-import clinic from "@/public/images/clinic.png";
+import logo from "@/public/images/logo.png";
 
 function NavBar() {
   const [stickyClass, setStickyClass] = useState("");
@@ -56,8 +56,8 @@ function NavBar() {
           <Toolbar id="aboutme" disableGutters>
             <Stack direction="row" justifyContent="center" spacing={2}>
               <Image
-                src={clinic}
-                alt="clinic"
+                src={logo}
+                alt="logo"
                 style={{ width: "78px", height: "80px" }}
               />
               <Stack direction="column" justifyContent="center">

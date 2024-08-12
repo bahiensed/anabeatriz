@@ -16,7 +16,10 @@ const BootstrapButton = styled(Box)({
 const NavBarButtonVisita = () => {
   return (
     <>
-      <Link href="#visit">
+      <Link
+        href="https://api.whatsapp.com/send?phone=24999882200"
+        target="_blank"
+      >
         <BootstrapButton
           className={dosis.className}
           sx={{
@@ -33,7 +36,7 @@ const NavBarButtonVisita = () => {
           <AccessTimeIcon
             sx={{ color: "#fff", float: "left", mt: -0.5, ml: 3 }}
           />
-          &nbsp; MARCAR UMA VISITA
+          &nbsp; MARCAR CONSULTA
         </BootstrapButton>
       </Link>
     </>
