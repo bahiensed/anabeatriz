@@ -13,7 +13,7 @@ const Banner = () => {
       id="banner"
       sx={{
         backgroundColor: "#047b8b",
-        height: "600px",
+        height: "650px",
         width: "100%",
       }}
     >
@@ -22,11 +22,11 @@ const Banner = () => {
           alt="logo"
           src={anabeatriz}
           style={{
-            border: "5px solid white",
-            borderRadius: "100px",
-            height: "200px",
+            border: "2.5px solid white",
+            borderRadius: "50%",
+            height: "220px",
             marginTop: "80px",
-            width: "200px",
+            width: "220px",
           }}
         />
         <BannerText />
@@ -53,11 +53,11 @@ const Banner = () => {
         <Stack
           direction="row"
           justifyContent="center"
-          spacing={1}
+          spacing={4}
           sx={{ mt: 3 }}
         >
           <BannerButtonVisita />
-          <Stack direction="column" justifyContent="center" sx={{ pt: 4 }}>
+          <Stack direction="column" justifyContent="center">
             <BannerButtonContato />
           </Stack>
         </Stack>

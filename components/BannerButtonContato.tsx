@@ -5,7 +5,7 @@ import { dosis } from "@/fonts/Dosis";
 
 const BootstrapButton = styled(Button)({
   "&:hover": {
-    color: "#cab882",
+    backgroundColor: "#78acb1",
   },
 });
 
@@ -15,13 +15,15 @@ const BannerButtonContato = () => {
       href="#appointment"
       className={dosis.className}
       sx={{
+        border: "2px solid #fff",
+        borderRadius: "28px",
         color: "#fff",
         fontWeight: 700,
-        width: "200px",
         height: "58px",
+        width: "200px",
       }}
     >
-      ENTRE EM CONTATO
+      NOSSO ENDEREÇO
     </BootstrapButton>
   );
 };

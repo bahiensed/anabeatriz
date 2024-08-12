@@ -29,6 +29,7 @@ function NavBar() {
       className={`navbar ${stickyClass}`}
       sx={{
         backgroundColor: "#fff",
+        
       }}
       position="sticky"
     >
