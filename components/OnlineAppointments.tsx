@@ -8,6 +8,7 @@ const OnlineAppointments = () => {
   return (
     <>
       <Stack
+        id="contact"
         sx={{
           backgroundColor: "#fff",
           mt: "1150px",

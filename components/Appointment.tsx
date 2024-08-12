@@ -16,7 +16,7 @@ const Appointment = () => {
       }}
     >
       <Stack
-        id="contact"
+        
         sx={{
           alignItems: "center",
         }}

@@ -28,7 +28,7 @@ const Navigation = () => {
           mr: 12,
         }}
       >
-        <Link href="#start">
+        <Link href="#aboutme">
           <BootstrapButton
             className={dosis.className}
             /*   onClick={handleCloseNavMenu} */
@@ -43,7 +43,7 @@ const Navigation = () => {
             Sobre Mim
           </BootstrapButton>
         </Link>
-        <Link href="#aboutme">
+        <Link href="#map">
           <BootstrapButton
             className={dosis.className}
             /*   onClick={handleCloseNavMenu} */
@@ -58,7 +58,7 @@ const Navigation = () => {
             Endereço
           </BootstrapButton>
         </Link>
-        <Link href="#contact">
+        <Link href="#reviews">
           <BootstrapButton
             className={dosis.className}
             /*   onClick={handleCloseNavMenu} */
@@ -73,7 +73,7 @@ const Navigation = () => {
             Reviews
           </BootstrapButton>
         </Link>
-        <Link href="#price">
+        <Link href="#galery">
           <BootstrapButton
             className={dosis.className}
             /*   onClick={handleCloseNavMenu} */
@@ -88,7 +88,7 @@ const Navigation = () => {
             Galeria
           </BootstrapButton>
         </Link>
-        <Link href="#reviews">
+        <Link href="#contact">
           <BootstrapButton
             className={dosis.className}
             /*   onClick={handleCloseNavMenu} */
