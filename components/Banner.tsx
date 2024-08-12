@@ -22,11 +22,11 @@ const Banner = () => {
           alt="logo"
           src={anabeatriz}
           style={{
-            border: "5px solid white",
-            borderRadius: "100px",
-            height: "200px",
+            border: "2.5px solid white",
+            borderRadius: "50%",
+            height: "220px",
             marginTop: "80px",
-            width: "200px",
+            width: "220px",
           }}
         />
         <BannerText />
