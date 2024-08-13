@@ -28,21 +28,6 @@ const Navigation = () => {
           mr: 12,
         }}
       >
-        <Link href="#start">
-          <BootstrapButton
-            className={dosis.className}
-            /*   onClick={handleCloseNavMenu} */
-            sx={{
-              color: "#333",
-              display: "block",
-              fontSize: "13px",
-              fontWeight: 600,
-              my: 2,
-            }}
-          >
-            Começar
-          </BootstrapButton>
-        </Link>
         <Link href="#aboutme">
           <BootstrapButton
             className={dosis.className}
@@ -50,42 +35,27 @@ const Navigation = () => {
             sx={{
               color: "#333",
               display: "block",
-              fontSize: "13px",
+              fontSize: "14px",
               fontWeight: 600,
               my: 2,
             }}
           >
-            Sobre mim
+            Sobre Mim
           </BootstrapButton>
         </Link>
-        <Link href="#contact">
+        <Link href="#map">
           <BootstrapButton
             className={dosis.className}
             /*   onClick={handleCloseNavMenu} */
             sx={{
               color: "#333",
               display: "block",
-              fontSize: "13px",
+              fontSize: "14px",
               fontWeight: 600,
               my: 2,
             }}
           >
-            Contato
-          </BootstrapButton>
-        </Link>
-        <Link href="#price">
-          <BootstrapButton
-            className={dosis.className}
-            /*   onClick={handleCloseNavMenu} */
-            sx={{
-              color: "#333",
-              display: "block",
-              fontSize: "13px",
-              fontWeight: 600,
-              my: 2,
-            }}
-          >
-            Preço
+            Endereço
           </BootstrapButton>
         </Link>
         <Link href="#reviews">
@@ -95,7 +65,7 @@ const Navigation = () => {
             sx={{
               color: "#333",
               display: "block",
-              fontSize: "13px",
+              fontSize: "14px",
               fontWeight: 600,
               my: 2,
             }}
@@ -110,12 +80,27 @@ const Navigation = () => {
             sx={{
               color: "#333",
               display: "block",
-              fontSize: "13px",
+              fontSize: "14px",
               fontWeight: 600,
               my: 2,
             }}
           >
             Galeria
+          </BootstrapButton>
+        </Link>
+        <Link href="#contact">
+          <BootstrapButton
+            className={dosis.className}
+            /*   onClick={handleCloseNavMenu} */
+            sx={{
+              color: "#333",
+              display: "block",
+              fontSize: "14px",
+              fontWeight: 600,
+              my: 2,
+            }}
+          >
+            Contato
           </BootstrapButton>
         </Link>
       </Stack>

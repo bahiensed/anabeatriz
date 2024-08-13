@@ -16,7 +16,7 @@ const Appointment = () => {
       }}
     >
       <Stack
-        id="contact"
+        
         sx={{
           alignItems: "center",
         }}
@@ -35,7 +35,7 @@ const Appointment = () => {
             zIndex: 1,
           }}
         >
-          MARCAR UMA VISITA
+          MARCAR CONSULTA
         </Typography>
 
         {/*   <Paper
