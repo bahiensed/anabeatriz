@@ -11,89 +11,11 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import {
-  Article,
-  Chat,
-  CheckBoxOutlined,
-  ContentPaste,
-  EmojiEvents,
-  Facebook,
-  FilterDrama,
-  HowToReg,
-  Instagram,
-  Language,
-  LinkedIn,
-  MonitorHeart,
-  School,
-} from "@mui/icons-material";
 
 import { dosis } from "@/fonts/Dosis";
 import { openSans } from "@/fonts/OpenSans";
+import { cardsData } from "@/constants";
 
-const cardsData = [
-  {
-    title: "Experiências Profissionais",
-    icon: <Chat sx={{ fontSize: "50px" }} />,
-    content: [
-        "Professora associada de Endocrinologia na faculdade de Ciências Médicas (FCM) da UERJ desde 2016.",
-        "Secretaria executiva da sociedade brasileira de endocrinooogia -regional RJ (2020/22 e 2023/24).",
-        "Coordenadora de pesquisa da Faculdade de Ciências Médicas da FCM (2024/28).",
-        "Professora do programa de pós-graduação em Fisiopatolologia Clínica e Experimental da FCM UERJ.",
-        "Ex-professora da Faculdade de Medicina de Petrópolis (2007-2023).",
-        "Ex-chefe do Departamento de Medicina Interna da FCM UERJ (2021/23).",
-        "Médica endocrinologista do Hospital Umiversitario Pedro Ernesto da UERJ (2012-2016).",
-    ]
-  },
-  {
-    title: "Formação Acadêmica",
-    icon: <School sx={{ fontSize: "50px" }} />,
-    content: [
-      "Doutorado em Endocrinologia, UFRJ, Rio de Janeiro, 2015",      
-      "Mestrado em endocrinologia, UFRJ, Rio de Janeiro, 2009",
-      "Especialista em Endocrinologia e Metodologia, SBEM, Rio de Janeiro, 2007 ",
-      "Residência em Endocrinologia e Metabologia, IEDE, Rio de Janeiro, 2007",
-      "Residência em Clínica Médica, UFJF, Juiz de Fora, 2005",
-      "Graduação em Medicina, FASE, Petrópolis, 2002",
-    ]
-  },
-  {
-    title: "Registros Profissionais",
-    icon: <HowToReg sx={{ fontSize: "50px" }} />,
-    content: [
-      "CRM RJ 737470",
-      "RQE Endocrinologia e Metabologia 14091",
-      "RQE Clínica Médica 15964",      
-    ]
-  },
-  {
-    title: "Tratamentos",
-    icon: <MonitorHeart sx={{ fontSize: "50px" }} />,
-    content: [
-      "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus.",
-    ]
-  },
-  {
-    title: "Prêmios",
-    icon: <EmojiEvents sx={{ fontSize: "50px" }} />,
-    content: [
-      "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus. ",
-    ]
-  },
-  {
-    title: "Publicações",
-    icon: <Article sx={{ fontSize: "50px" }} />,
-    content: [
-      "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus.leo lectus venenat consectetur dui ad sagittis sapien integer nullam, eu habitant leo potenti id interdum dolor neque ante, placerat metus bibendum commodo suscipit massa nisl posuere. neque class auctor facilisis aenean est lobortis molestie posuere, amet loborti habitant quam leo dictum quam congue, vestibulum est dictumst convallis pellentesque felis lacinia. laoreet est pharetra varius justo suspendisse lorem",
-    ]
-  },
-  {
-    title: "Redes Sociais",
-    icon: <FilterDrama sx={{ fontSize: "50px" }} />,
-    content: [
-      "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus."
-    ]
-  },
-]
 
 const StyledAccordion = styled(Accordion)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -126,7 +48,7 @@ export default function MasonryWithVariableHeightItems() {
                   pt: 8,
                 }}
               >
-                {item.icon}
+                <item.icon sx={{fontSize: "50px",}} />
               </Stack>
 
               <Typography
