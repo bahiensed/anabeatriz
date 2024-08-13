@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Masonry from "@mui/lab/Masonry";
 import { styled } from "@mui/material/styles";
-import { itemData } from "@/constants/GaleryData";
+import { itemData } from "@/constants";
 import { Typography } from "@mui/material";
 import { dosis } from "@/fonts/Dosis";
 
