@@ -76,7 +76,7 @@ export default function MasonryWithVariableHeightItems() {
                     fontSize: "16px",
                     fontWeight: 300,
                     lineHeight: 1.4,
-                    mb: 1.5, // Add margin between each text block
+                    mb: 1.5,
                   }}
                 >
                   {text}
