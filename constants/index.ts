@@ -1,7 +1,17 @@
+import {
+  Article,
+  Chat,
+  EmojiEvents,
+  FilterDrama,
+  HowToReg,
+  MonitorHeart,
+  School,
+} from "@mui/icons-material";
+
 export const cardsData = [
   {
     title: "Experiências Profissionais",
-    icon: "Chat",
+    icon: Chat,
     content: [
         "Professora associada de Endocrinologia na faculdade de Ciências Médicas (FCM) da UERJ desde 2016.",
         "Secretaria executiva da sociedade brasileira de endocrinooogia -regional RJ (2020/22 e 2023/24).",
@@ -14,7 +24,7 @@ export const cardsData = [
   },
   {
     title: "Formação Acadêmica",
-    icon: "School",
+    icon: School,
     content: [
       "Doutorado em Endocrinologia, UFRJ, Rio de Janeiro, 2015",      
       "Mestrado em endocrinologia, UFRJ, Rio de Janeiro, 2009",
@@ -26,7 +36,7 @@ export const cardsData = [
   },
   {
     title: "Registros Profissionais",
-    icon: "HowToReg",
+    icon: HowToReg,
     content: [
       "CRM RJ 737470",
       "RQE Endocrinologia e Metabologia 14091",
@@ -35,28 +45,28 @@ export const cardsData = [
   },
   {
     title: "Tratamentos",
-    icon: "MonitorHeart",
+    icon: MonitorHeart,
     content: [
       "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus.",
     ]
   },
   {
     title: "Prêmios",
-    icon: "EmojiEvents",
+    icon: EmojiEvents,
     content: [
       "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus. ",
     ]
   },
   {
     title: "Publicações",
-    icon: "Article",
+    icon: Article,
     content: [
       "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus.leo lectus venenat consectetur dui ad sagittis sapien integer nullam, eu habitant leo potenti id interdum dolor neque ante, placerat metus bibendum commodo suscipit massa nisl posuere. neque class auctor facilisis aenean est lobortis molestie posuere, amet loborti habitant quam leo dictum quam congue, vestibulum est dictumst convallis pellentesque felis lacinia. laoreet est pharetra varius justo suspendisse lorem",
     ]
   },
   {
     title: "Redes Sociais",
-    icon: "FilterDrama",
+    icon: FilterDrama,
     content: [
       "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus."
     ]
