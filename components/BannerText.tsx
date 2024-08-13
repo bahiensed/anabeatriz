@@ -10,7 +10,7 @@ const BannerText = () => {
         variant="h2"
         sx={{ color: "#fff", mt: 5 }}
       >
-        ANA BEATRIZ 
+        ANA BEATRIZ WINTER
       </Typography>
 
       <Typography
