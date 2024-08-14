@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Box, Stack, Typography } from "@mui/material";
+import AboutMe from "@/components/AboutMe";
 import BannerButtonContato from "@/components/BannerButtonContato";
 import BannerButtonVisita from "@/components/BannerButtonVisita";
 import BannerText from "@/components/BannerText";
@@ -62,6 +63,7 @@ const Banner = () => {
           </Stack>
         </Stack>
       </Stack>
+      
     </Box>
   );
 };
