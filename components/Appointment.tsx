@@ -5,7 +5,7 @@ import { Box, Stack } from "@mui/material";
 const Appointment = () => {
   return (
     <Box
-      
+      id="map"
       sx={{
         alignItems: "center",
       }}
