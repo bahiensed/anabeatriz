@@ -34,7 +34,7 @@ const Banner = () => {
             border: "2.5px solid white",
             borderRadius: "50%",
             height: "220px",
-            marginTop: "65px",
+            marginTop: "50px",
             width: "220px",
           }}
         />
@@ -71,7 +71,7 @@ const Banner = () => {
           </Stack>
         </Stack>
       </Stack>
-      <Stack alignItems="center" justifyContent="center" sx={{mt:2}}>
+      <Stack alignItems="center" justifyContent="center" sx={{ mt: 2 }}>
         <Link href="#menu">
           <ArrowCircleDown
             onClick={toggleMenu}
