@@ -88,7 +88,10 @@ const Navigation = () => {
             Galeria
           </BootstrapButton>
         </Link>
-        <Link href="#contact">
+        <Link
+          href="https://api.whatsapp.com/send?phone=24999882200"
+          target="_blank"
+        >
           <BootstrapButton
             className={dosis.className}
             /*   onClick={handleCloseNavMenu} */

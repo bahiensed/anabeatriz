@@ -1,13 +1,22 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Box, Stack, Typography } from "@mui/material";
 import BannerButtonContato from "@/components/BannerButtonContato";
 import BannerButtonVisita from "@/components/BannerButtonVisita";
 import BannerText from "@/components/BannerText";
-import PlaceIcon from "@mui/icons-material/Place";
 import anabeatriz from "@/public/images/anabeatriz.jpg";
+import { ArrowCircleDown, Place } from "@mui/icons-material";
+import { useState } from "react";
 
 const Banner = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleMenu = () => {
+    setIsVisible(!isVisible);
+  };
+
   return (
     <Box
       id="banner"
@@ -25,7 +34,7 @@ const Banner = () => {
             border: "2.5px solid white",
             borderRadius: "50%",
             height: "220px",
-            marginTop: "80px",
+            marginTop: "50px",
             width: "220px",
           }}
         />
@@ -34,9 +43,9 @@ const Banner = () => {
           direction="row"
           justifyContent="center"
           spacing={1}
-          sx={{ mt: 2 }}
+          sx={{ mt: 3 }}
         >
-          <PlaceIcon sx={{ color: "#fff" }} />
+          <Place sx={{ color: "#fff" }} />
           <Stack direction="column" justifyContent="center">
             <Link href="#map">
               <Typography
@@ -61,6 +70,21 @@ const Banner = () => {
             <BannerButtonContato />
           </Stack>
         </Stack>
+      </Stack>
+      <Stack alignItems="center" justifyContent="center" sx={{ mt: 2 }}>
+        <Link href="#menu">
+          <ArrowCircleDown
+            onClick={toggleMenu}
+            sx={{
+              background: "none",
+              backgroundColor: "none",
+              color: "#cab882",
+              cursor: "pointer",
+              width: "48px",
+              height: "48px",
+            }}
+          />
+        </Link>
       </Stack>
     </Box>
   );

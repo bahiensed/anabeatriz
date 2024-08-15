@@ -47,13 +47,14 @@ const BannerAppointment = () => {
         </Typography>
         <Stack
           direction="row"
+          spacing={4}
           sx={{
             mt: "400px",
             position: "absolute",
           }}
         >
           <BannerButtonVisita />
-          <Stack direction="column" sx={{ mt: 5 }}>
+          <Stack direction="column"  >
             <BannerButtonAppointmentContato />
           </Stack>
         </Stack>

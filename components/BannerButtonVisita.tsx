@@ -27,7 +27,6 @@ const BannerButtonVisita = () => {
             color: "#333",
             fontWeight: 700,
             height: "58px",
-
             width: "200px",
           }}
         >

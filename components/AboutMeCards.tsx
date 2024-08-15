@@ -16,7 +16,6 @@ import { dosis } from "@/fonts/Dosis";
 import { openSans } from "@/fonts/OpenSans";
 import { cardsData } from "@/constants";
 
-
 const StyledAccordion = styled(Accordion)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   color: theme.palette.text.secondary,
@@ -35,7 +34,7 @@ export default function MasonryWithVariableHeightItems() {
     >
       <Masonry columns={3} spacing={4}>
         {cardsData.map((item, i) => (
-          <Paper  key={i} elevation={0} sx={{ pb: 4 }}>
+          <Paper key={i} elevation={0} sx={{ pb: 4 }}>
             <Container>
               <Stack
                 sx={{
@@ -48,7 +47,7 @@ export default function MasonryWithVariableHeightItems() {
                   pt: 8,
                 }}
               >
-                <item.icon sx={{fontSize: "50px",}} />
+                <item.icon sx={{ fontSize: "50px" }} />
               </Stack>
 
               <Typography
@@ -82,11 +81,11 @@ export default function MasonryWithVariableHeightItems() {
                   {text}
                 </Typography>
               ))}
-    
             </Container>
           </Paper>
         ))}
       </Masonry>
+      <Stack id="appointment"></Stack>
     </Box>
   );
 }

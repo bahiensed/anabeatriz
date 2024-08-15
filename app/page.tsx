@@ -12,7 +12,6 @@ export default function Home() {
       <NavBar />
       <AboutMe />
       <Appointment />
-      <Price />
       <SocialProof />
       <Galery />
       <BannerAppointment />

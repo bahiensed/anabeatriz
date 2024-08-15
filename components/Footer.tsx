@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Box, Stack } from "@mui/material";
 import { ArrowCircleUpOutlined } from "@mui/icons-material";
+import { dosis } from "@/fonts/Dosis";
 
 const Footer = () => {
   const date = new Date();
@@ -26,7 +27,9 @@ const Footer = () => {
           }}
         />
       </Link>
-      <Stack sx={{ mt: 3 }}>&#169;{year}</Stack>
+      <Stack className={dosis.className} sx={{ mt: 2 }}>
+        &#169; Dra. Ana Beatriz Winter, {year}.
+      </Stack>
     </Box>
   );
 };
