@@ -6,7 +6,7 @@ import Masonry from "@mui/lab/Masonry";
 import { styled } from "@mui/material/styles";
 import { itemData } from "@/constants";
 import { Typography } from "@mui/material";
-import { dosis } from "@/fonts/Dosis";
+import { dosis } from "@/fonts";
 
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",

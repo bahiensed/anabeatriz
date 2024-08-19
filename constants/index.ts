@@ -1,6 +1,7 @@
 import {
   Article,
   Chat,
+  CheckBoxOutlined,
   EmojiEvents,
   Facebook,
   FilterDrama,
@@ -10,7 +11,6 @@ import {
   MonitorHeart,
   School,
 } from "@mui/icons-material";
-import { Divider } from "@mui/material";
 
 export const cardsData = [
   {
@@ -37,6 +37,7 @@ export const cardsData = [
       "Residência em Clínica Médica, UFJF, Juiz de Fora, 2005",
       "Graduação em Medicina, FASE, Petrópolis, 2002",
     ],
+    check: CheckBoxOutlined,
   },
   {
     title: "Registros Profissionais",
@@ -46,6 +47,7 @@ export const cardsData = [
       "RQE Endocrinologia e Metabologia 14091",
       "RQE Clínica Médica 15964",
     ],
+    check: CheckBoxOutlined,
   },
   {
     title: "Tratamentos",
@@ -53,6 +55,7 @@ export const cardsData = [
     content: [
       "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus.",
     ],
+    check: CheckBoxOutlined,
   },
   {
     title: "Prêmios",
@@ -60,13 +63,20 @@ export const cardsData = [
     content: [
       "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus. ",
     ],
+    check: CheckBoxOutlined,
   },
   {
     title: "Publicações",
     icon: Article,
     content: [
-      "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus.leo lectus venenat consectetur dui ad sagittis sapien integer nullam, eu habitant leo potenti id interdum dolor neque ante, placerat metus bibendum commodo suscipit massa nisl posuere. neque class auctor facilisis aenean est lobortis molestie posuere, amet loborti habitant quam leo dictum quam congue, vestibulum est dictumst convallis pellentesque felis lacinia. laoreet est pharetra varius justo suspendisse lorem",
+      "Lorem ipsum eget risus tristique odio lacus volutpat",
+      "praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla",
+      "arcu fames luctus.leo lectus venenat consectetur dui ad sagittis sapien integer nullam,",
+      "eu habitant leo potenti id interdum dolor neque ante, placerat metus bibendum commodo suscipit massa nisl",
+      "posuere. neque class auctor facilisis aenean est lobortis molestie posuere, amet loborti habitant quam leo dictum quam congue,",
+      "vestibulum est dictumst convallis pellentesque felis lacinia. laoreet est pharetra varius justo suspendisse lorem",
     ],
+    check: CheckBoxOutlined,
   },
   {
     title: "Redes Sociais",
@@ -74,6 +84,11 @@ export const cardsData = [
     content: [
       "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus.",
     ],
+    social:[
+      Facebook,
+      Instagram,
+      LinkedIn
+    ]
   },
 ];
 

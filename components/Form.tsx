@@ -4,7 +4,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { Button, Stack, styled, Typography } from "@mui/material";
-import { dosis } from "@/fonts/Dosis";
+import { dosis } from "@/fonts";
 
 export default function Form() {
   const BootstrapButton = styled(Button)({
@@ -75,14 +75,14 @@ export default function Form() {
           sx={{ width: "300px" }}
         />
       </Stack>
-      <Stack alignItems="center" justifyContent="center" sx={{pt:1}}>
+      <Stack alignItems="center" justifyContent="center" sx={{ pt: 1 }}>
         <TextField
           id="outlined-multiline-static"
           label="Mensagem"
           multiline
           rows={6}
           fullWidth
-          sx={{width: "612px" }}
+          sx={{ width: "612px" }}
         />
       </Stack>
       <Stack alignItems="center" justifyContent="center" sx={{ pt: 2 }}>

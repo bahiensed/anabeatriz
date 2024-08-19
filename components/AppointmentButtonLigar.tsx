@@ -1,11 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { Button, Stack, styled, Typography } from "@mui/material";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
-import { dosis } from "@/fonts/Dosis";
-import { useState } from "react";
-import { openSans } from "@/fonts/OpenSans";
+import { dosis, openSans } from "@/fonts";
 
 const BootstrapButton = styled(Button)({
   "&:hover": {

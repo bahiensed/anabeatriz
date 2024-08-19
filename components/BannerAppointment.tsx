@@ -4,7 +4,7 @@ import BannerButtonAppointmentContato from "@/components/BannerButtonAppointment
 import BannerButtonVisita from "@/components/BannerButtonVisita";
 import appointment from "@/public/images/appointment.png";
 import anabeatriz from "@/public/images/anabeatriz.jpg";
-import { dosis } from "@/fonts/Dosis";
+import { dosis } from "@/fonts";
 
 const BannerAppointment = () => {
   return (
@@ -12,7 +12,6 @@ const BannerAppointment = () => {
       <Stack
         sx={{
           alignItems: "center",
-         
         }}
       >
         <Image
@@ -54,7 +53,7 @@ const BannerAppointment = () => {
           }}
         >
           <BannerButtonVisita />
-          <Stack direction="column"  >
+          <Stack direction="column">
             <BannerButtonAppointmentContato />
           </Stack>
         </Stack>

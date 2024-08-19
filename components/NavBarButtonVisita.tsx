@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { Box, styled } from "@mui/material";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import { dosis } from "@/fonts/Dosis";
+import { dosis } from "@/fonts";
 
 const BootstrapButton = styled(Box)({
   "&:hover": {
