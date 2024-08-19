@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button, styled } from "@mui/material";
-import { dosis } from "@/fonts/Dosis";
+import { dosis } from "@/fonts/Fonts";
 
 const AppointmentButtonVejaMais = () => {
   const VejaMaisButton = styled(Button)({

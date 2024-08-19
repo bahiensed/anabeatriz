@@ -8,8 +8,7 @@ import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import HalfRating from "@/components/Rating";
 import doctorImage from "@/public/images/doctorImage.png";
 import { carouselData } from "@/constants";
-import { openSans } from "@/fonts/OpenSans";
-import { dosis } from "@/fonts/Dosis";
+import { dosis, openSans } from "@/fonts/Fonts";
 
 // Import Swiper styles
 import "swiper/css";

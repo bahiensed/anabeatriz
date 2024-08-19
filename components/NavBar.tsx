@@ -5,7 +5,7 @@ import Image from "next/image";
 import { AppBar, Stack, Toolbar, Typography } from "@mui/material";
 import Navigation from "@/components/Navigation";
 import NavBarButtonVisita from "@/components/NavBarButtonVisita";
-import { dosis } from "@/fonts/Dosis";
+import { dosis } from "@/fonts/Fonts";
 import logo from "@/public/images/logo.png";
 
 function NavBar() {

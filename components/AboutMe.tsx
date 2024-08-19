@@ -1,6 +1,6 @@
 import { Stack, Typography } from "@mui/material";
 import AbouMeCards from "@/components/AboutMeCards";
-import { dosis } from "@/fonts/Dosis";
+import { dosis } from "@/fonts/Fonts";
 
 const AboutMe = () => {
   return (

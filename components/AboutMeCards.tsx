@@ -3,24 +3,16 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Masonry from "@mui/lab/Masonry";
+import { Box, Container, Paper, Stack, Typography } from "@mui/material";
 import {
-  Accordion,
-  Box,
-  Container,
-  Paper,
-  Stack,
-  Typography,
-} from "@mui/material";
+  CheckBoxOutlined,
+  Facebook,
+  Instagram,
+  LinkedIn,
+} from "@mui/icons-material"; // Import CheckBox icon
 
-import { dosis } from "@/fonts/Dosis";
-import { openSans } from "@/fonts/OpenSans";
+import { dosis, openSans } from "@/fonts/Fonts";
 import { cardsData } from "@/constants";
-import { Facebook } from "@mui/icons-material";
-
-const StyledAccordion = styled(Accordion)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  color: theme.palette.text.secondary,
-}));
 
 export default function MasonryWithVariableHeightItems() {
   return (
@@ -68,20 +60,60 @@ export default function MasonryWithVariableHeightItems() {
               </Typography>
 
               {item.content.map((text, j) => (
-                <Typography
+                <Stack
                   key={j}
-                  className={openSans.className}
-                  sx={{
-                    color: "#434343",
-                    fontSize: "16px",
-                    fontWeight: 300,
-                    lineHeight: 1.4,
-                    mb: 1.5,
-                  }}
+                  direction="row"
+                  alignItems="flex-start" // Align items to the top
+                  spacing={1}
+                  sx={{ mb: 2 }}
                 >
-                  {text}
-                </Typography>
+                  {/* Render CheckBox only if item has check property */}
+                  {item.check && (
+                    <CheckBoxOutlined
+                      sx={{
+                        color: "#43aae6",
+                        fontSize: "24px",
+                      }}
+                    />
+                  )}
+
+                  <Typography
+                    className={openSans.className}
+                    sx={{
+                      color: "#434343",
+                      fontSize: "16px",
+                      fontWeight: 300,
+                      lineHeight: 1.4,
+                      flex: 1, // Allow text to take up remaining space
+                      wordWrap: "break-word", // Ensure text wraps within container
+                    }}
+                  >
+                    {text}
+                  </Typography>
+                </Stack>
               ))}
+              {item.social && (
+                <>
+                  <Facebook
+                    sx={{
+                      color: "#213553",
+                      fontSize: "38px",
+                    }}
+                  />
+                  <Instagram
+                    sx={{
+                      color: "#4f86ac",
+                      fontSize: "38px",
+                    }}
+                  />
+                  <LinkedIn
+                    sx={{
+                      color: "#008bc2",
+                      fontSize: "38px",
+                    }}
+                  />
+                </>
+              )}
             </Container>
           </Paper>
         ))}
