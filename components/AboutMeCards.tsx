@@ -15,6 +15,7 @@ import {
 import { dosis } from "@/fonts/Dosis";
 import { openSans } from "@/fonts/OpenSans";
 import { cardsData } from "@/constants";
+import { Facebook } from "@mui/icons-material";
 
 const StyledAccordion = styled(Accordion)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
