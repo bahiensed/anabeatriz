@@ -36,7 +36,7 @@ export default function Galery() {
           color: "#333",
           fontSize: "36px",
           fontWeight: 500,
-          pt: 5,
+          pt: 14,
           pb: 10,
           lineHeight: 1.1,
           textAlign: "center",

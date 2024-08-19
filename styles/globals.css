@@ -111,3 +111,8 @@ a {
   top: 0;
   left: 0;
 }
+
+:root {
+  --swiper-navigation-color: #fff;
+ 
+}

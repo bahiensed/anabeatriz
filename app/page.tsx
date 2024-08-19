@@ -4,7 +4,7 @@ import BannerAppointment from "@/components/BannerAppointment";
 import Form from "@/components/Form";
 import Galery from "@/components/Galery";
 import NavBar from "@/components/NavBar";
-import SocialProof from "@/components/SocialProof";
+import SocialProofCarousel from "../components/SocialProofCarousel";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <NavBar />
       <AboutMe />
       <Appointment />
-      <SocialProof />
+      <SocialProofCarousel />
       <Galery />
       <Form />
       <BannerAppointment />

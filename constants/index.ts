@@ -147,3 +147,21 @@ export const itemData = [
     title: "Bike",
   },
 ];
+
+export const carouselData = [
+  {
+    text: "Lorem ipsum dolor sit amet. Sit quis nemo eos praesentium internos sed impedit obcaecati et nobis magnam.",
+  },
+  {
+    text: "Lorem ipsum dolor sit amet. Sit quis nemo eos praesentium internos sed impedit obcaecati et nobis magnam.",
+  },
+  {
+    text: "Lorem ipsum dolor sit amet. Sit quis nemo eos praesentium internos sed impedit obcaecati et nobis magnam.",
+  },
+  {
+    text: "Lorem ipsum dolor sit amet. Sit quis nemo eos praesentium internos sed impedit obcaecati et nobis magnam.",
+  },
+  {
+    text: "Lorem ipsum dolor sit amet. Sit quis nemo eos praesentium internos sed impedit obcaecati et nobis magnam.",
+  },
+];

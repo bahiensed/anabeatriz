@@ -6,10 +6,10 @@ export default function HalfRating() {
       sx={{
         width: "100%",
         textAlign: "left",
-        mt: 3,
+        
       }}
     >
-      <Typography>Paciente</Typography>
+      <Typography sx={{color:"#fff"}}>Paciente</Typography>
       <Rating
         name="size-small"
         size="small"
