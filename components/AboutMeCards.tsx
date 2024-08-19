@@ -11,7 +11,7 @@ import {
   LinkedIn,
 } from "@mui/icons-material"; // Import CheckBox icon
 
-import { dosis, openSans } from "@/fonts/Fonts";
+import { dosis, openSans } from "@/fonts";
 import { cardsData } from "@/constants";
 
 export default function MasonryWithVariableHeightItems() {

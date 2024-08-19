@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Box, Stack } from "@mui/material";
 import { ArrowCircleUpOutlined } from "@mui/icons-material";
-import { dosis } from "@/fonts/Fonts";
+import { dosis } from "@/fonts";
 
 const Footer = () => {
   const date = new Date();

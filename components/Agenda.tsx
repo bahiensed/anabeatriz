@@ -1,6 +1,6 @@
 import { Box, Button, Paper, Stack, styled, Typography } from "@mui/material";
 import AppointmentButtonVejaMais from "@/components/AppointmentButtonVejaMais";
-import { dosis, openSans } from "@/fonts/Fonts";
+import { dosis, openSans } from "@/fonts";
 
 const Agenda = () => {
   const BootstrapButton = styled(Button)({

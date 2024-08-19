@@ -4,7 +4,7 @@ import BannerButtonAppointmentContato from "@/components/BannerButtonAppointment
 import BannerButtonVisita from "@/components/BannerButtonVisita";
 import appointment from "@/public/images/appointment.png";
 import anabeatriz from "@/public/images/anabeatriz.jpg";
-import { dosis } from "@/fonts/Fonts";
+import { dosis } from "@/fonts";
 
 const BannerAppointment = () => {
   return (

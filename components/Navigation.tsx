@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button, Stack, styled } from "@mui/material";
-import { dosis } from "@/fonts/Fonts";
+import { dosis } from "@/fonts";
 
 const BootstrapButton = styled(Button)({
   "&:focus": {

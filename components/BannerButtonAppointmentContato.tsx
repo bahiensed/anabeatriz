@@ -1,7 +1,7 @@
 "use client";
 
 import { Button, styled } from "@mui/material";
-import { dosis } from "@/fonts/Fonts";
+import { dosis } from "@/fonts";
 
 const BannerButtonAppointmentContato = () => {
   const BootstrapButton = styled(Button)({

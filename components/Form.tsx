@@ -4,7 +4,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { Button, Stack, styled, Typography } from "@mui/material";
-import { dosis } from "@/fonts/Fonts";
+import { dosis } from "@/fonts";
 
 export default function Form() {
   const BootstrapButton = styled(Button)({
