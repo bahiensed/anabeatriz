@@ -12,7 +12,7 @@ const BannerAppointment = () => {
       <Stack
         sx={{
           alignItems: "center",
-          mt: 10,
+         
         }}
       >
         <Image
