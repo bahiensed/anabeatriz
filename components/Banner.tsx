@@ -26,7 +26,57 @@ const Banner = () => {
         width: "100%",
       }}
     >
-      <Stack id="start" sx={{ alignItems: "center" }}>
+      {/* Mobile */}
+
+      <Stack
+        id="start"
+        sx={{ alignItems: "center", display: { xs: "flex", md: "none" } }}
+      >
+        <Image
+          alt="logo"
+          src={anabeatriz}
+          style={{
+            border: "2.5px solid white",
+            borderRadius: "50%",
+            height: "200px",
+            marginTop: "40px",
+            width: "200px",
+          }}
+        />
+        <BannerText />
+        <Stack
+          direction="row"
+          justifyContent="center"
+          spacing={1}
+          sx={{ mt: 3 }}
+        >
+          <Place sx={{ color: "#fff" }} />
+          <Stack direction="column" justifyContent="center">
+            <Link href="#map">
+              <Typography
+                sx={{
+                  color: "#fff",
+                  fontWeight: 700,
+                }}
+              >
+                PETRÓPOLIS
+              </Typography>
+            </Link>
+          </Stack>
+        </Stack>
+        <Stack sx={{ mt: 3 }}>
+          <BannerButtonVisita />
+          <Stack sx={{mt:3}}>
+            <BannerButtonContato />
+          </Stack>
+        </Stack>
+      </Stack>
+
+      {/* Desktop */}
+      <Stack
+        id="start"
+        sx={{ alignItems: "center", display: { xs: "none", md: "flex" } }}
+      >
         <Image
           alt="logo"
           src={anabeatriz}
@@ -59,6 +109,7 @@ const Banner = () => {
             </Link>
           </Stack>
         </Stack>
+
         <Stack
           direction="row"
           justifyContent="center"
@@ -70,21 +121,22 @@ const Banner = () => {
             <BannerButtonContato />
           </Stack>
         </Stack>
-      </Stack>
-      <Stack alignItems="center" justifyContent="center" sx={{ mt: 2 }}>
-        <Link href="#menu">
-          <ArrowCircleDown
-            onClick={toggleMenu}
-            sx={{
-              background: "none",
-              backgroundColor: "none",
-              color: "#cab882",
-              cursor: "pointer",
-              width: "48px",
-              height: "48px",
-            }}
-          />
-        </Link>
+
+        <Stack alignItems="center" justifyContent="center" sx={{ mt: 2 }}>
+          <Link href="#menu">
+            <ArrowCircleDown
+              onClick={toggleMenu}
+              sx={{
+                background: "none",
+                backgroundColor: "none",
+                color: "#cab882",
+                cursor: "pointer",
+                width: "48px",
+                height: "48px",
+              }}
+            />
+          </Link>
+        </Stack>
       </Stack>
     </Box>
   );
