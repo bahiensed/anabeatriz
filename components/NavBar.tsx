@@ -26,6 +26,7 @@ function NavBar() {
 
   return (
     <>
+      {/* Desktop */}
       <Stack sx={{ display: { xs: "none", md: "flex" } }}>
         <AppBar
           id="menu"
