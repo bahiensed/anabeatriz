@@ -26,43 +26,46 @@ function NavBar() {
 
   return (
     <>
-      <AppBar
-        id="menu"
-        className={`navbar ${stickyClass}`}
-        sx={{
-          backgroundColor: "#fff",
-        }}
-        position="sticky"
-      >
-        <Toolbar id="aboutme" disableGutters>
-          <Stack direction="row" justifyContent="center" spacing={2}>
-            <Image
-              src={logo}
-              alt="logo"
-              style={{ width: "78px", height: "80px" }}
-            />
-            <Stack direction="column" justifyContent="center">
-              <Typography
-                className={dosis.className}
-                variant="h6"
-                sx={{ color: "#000", lineHeight: 1 }}
-              >
-                ANA BEATRIZ WINTER
-              </Typography>
-              <Typography
-                className={dosis.className}
-                sx={{ color: "gray", fontSize: "12px" }}
-              >
-                ENDOCRINOLOGIA & METABOLOGIA
-              </Typography>
+      {/* Desktop */}
+      <Stack sx={{ display: { xs: "none", md: "flex" } }}>
+        <AppBar
+          id="menu"
+          className={`navbar ${stickyClass}`}
+          sx={{
+            backgroundColor: "#fff",
+          }}
+          position="sticky"
+        >
+          <Toolbar id="aboutme" disableGutters>
+            <Stack direction="row" justifyContent="center" spacing={2}>
+              <Image
+                src={logo}
+                alt="logo"
+                style={{ width: "78px", height: "80px" }}
+              />
+              <Stack direction="column" justifyContent="center">
+                <Typography
+                  className={dosis.className}
+                  variant="h6"
+                  sx={{ color: "#000", lineHeight: 1 }}
+                >
+                  ANA BEATRIZ WINTER
+                </Typography>
+                <Typography
+                  className={dosis.className}
+                  sx={{ color: "gray", fontSize: "12px" }}
+                >
+                  ENDOCRINOLOGIA & METABOLOGIA
+                </Typography>
+              </Stack>
             </Stack>
-          </Stack>
-          <Navigation />
-          <Stack direction="column">
-            <NavBarButtonVisita />
-          </Stack>
-        </Toolbar>
-      </AppBar>
+            <Navigation />
+            <Stack direction="column">
+              <NavBarButtonVisita />
+            </Stack>
+          </Toolbar>
+        </AppBar>
+      </Stack>
     </>
   );
 }
