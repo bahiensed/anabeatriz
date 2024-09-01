@@ -42,7 +42,7 @@ const Banner = () => {
               border: "2.5px solid white",
               borderRadius: "50%",
               height: "200px",
-              marginTop: "40px",
+              marginTop: "30px",
               width: "200px",
             }}
           />
@@ -88,7 +88,7 @@ const Banner = () => {
             border: "2.5px solid white",
             borderRadius: "50%",
             height: "220px",
-            marginTop: "50px",
+            marginTop: "5%",
             width: "220px",
           }}
         />

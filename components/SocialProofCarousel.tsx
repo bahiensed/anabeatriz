@@ -26,11 +26,11 @@ export default function SocialProofCarousel() {
         className={dosis.className}
         sx={{
           color: "#333",
-          fontSize: "36px",
+          fontSize: { xs: "24px", sm: "30px", md: "36px" },
           fontWeight: 500,
           lineHeight: 1.1,
-          pt: 14,
-          pb: 10,
+          pt: { xs: 8, md: 14 },
+          pb: { xs: 6, md: 10 },
           textAlign: "center",
         }}
       >
@@ -49,7 +49,7 @@ export default function SocialProofCarousel() {
           alignItems: "center",
           display: "block",
           backgroundColor: "#047b8b",
-          height: "400px",
+          height: "55vh",
           textAlign: "center",
         }}
       >
@@ -58,22 +58,21 @@ export default function SocialProofCarousel() {
             <FormatQuoteIcon
               sx={{
                 color: "#fff",
-                fontSize: "80px",
-                mt: 5,
+                fontSize: { xs: "60px", md: "80px" },
+                mt: { xs: 3, md: 5 },
               }}
             />
             <Typography
               className={openSans.className}
               sx={{
                 color: "#fff",
-                fontSize: "18px",
+                fontSize: { xs: "16px", md: "18px" },
                 margin: "0 auto",
-                mt: 6,
+                mt: { xs: 4, md: 6 },
                 lineHeight: 1.7,
-                width: "50%",
+                width: { xs: "80%", md: "50%" },
               }}
             >
-              {" "}
               {item.text}
             </Typography>
             <Stack
@@ -81,7 +80,7 @@ export default function SocialProofCarousel() {
               justifyContent="center"
               direction="row"
               spacing={2}
-              sx={{ mt: 5 }}
+              sx={{ mt: { xs: 3, md: 5 } }}
             >
               <Image
                 alt="Doctor Image"
@@ -97,6 +96,39 @@ export default function SocialProofCarousel() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <style jsx global>{`
+        .swiper-button-next,
+        .swiper-button-prev {
+          color: #fff;
+     
+        }
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+          font-size: 30px;
+        }
+        .swiper-button-next {
+          right: 130px;
+        }
+        .swiper-button-prev {
+          left: 130px;
+        }
+        @media (max-width: 600px) {
+          .swiper-button-next {
+            right: 10px;
+          }
+          .swiper-button-prev {
+            left: 10px;
+          }
+        }
+        @media (min-width: 601px) and (max-width: 900px) {
+          .swiper-button-next {
+            right: 50px;
+          }
+          .swiper-button-prev {
+            left: 50px;
+          }
+        }
+      `}</style>
     </Box>
   );
 }
