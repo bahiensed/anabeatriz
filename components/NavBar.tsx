@@ -20,16 +20,15 @@ function NavBar() {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
       // window height changed for the demo
-      windowHeight > 550 ? setStickyClass("sticky-nav") : setStickyClass("");
+      windowHeight > 690 ? setStickyClass("sticky-nav") : setStickyClass("");
     }
   };
 
   return (
     <>
       {/* Desktop */}
-      <Stack sx={{ display: { xs: "none", md: "flex" } }}>
+      <Stack id="menu" sx={{ display: { xs: "none", md: "flex" } }}>
         <AppBar
-          id="menu"
           className={`navbar ${stickyClass}`}
           sx={{
             backgroundColor: "#fff",
