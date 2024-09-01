@@ -16,7 +16,6 @@
     "@mui/lab": "^5.0.0-alpha.173",
     "@mui/material": "^5.16.6",
     "@mui/x-data-grid": "^7.12.0",
-    "@novu/echo": "^0.24.3-alpha.4",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
