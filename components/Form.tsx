@@ -20,7 +20,7 @@ export default function Form() {
       sx={{
         backgroundColor: "#fff",
         maxHeight: "100%",
-        mt: 10,
+        mt: { xs: 5, md: 10 },
         pb: 10,
         "& .MuiTextField-root": { m: 1 },
       }}
@@ -31,10 +31,10 @@ export default function Form() {
         className={dosis.className}
         sx={{
           color: "#333",
-          fontSize: "36px",
+          fontSize: { xs: "24px", sm: "30px", md: "36px" },
           fontWeight: 500,
-          pt: 5,
-          pb: 5,
+          pt: { xs: 3, md: 5 },
+          pb: { xs: 3, md: 5 },
           lineHeight: 1.1,
           textAlign: "center",
         }}
@@ -45,7 +45,7 @@ export default function Form() {
         className={dosis.className}
         sx={{
           color: "#333",
-          fontSize: "26px",
+          fontSize: { xs: "20px", sm: "24px", md: "26px" },
           fontWeight: 500,
           lineHeight: 1.1,
           pb: 5,
@@ -55,7 +55,7 @@ export default function Form() {
         Entre em contato conosco
       </Typography>
       <Stack
-        direction="row"
+        direction={{ xs: "column", sm: "row" }}
         alignItems="center"
         justifyContent="center"
         spacing={4}
@@ -65,14 +65,14 @@ export default function Form() {
           label="Nome"
           multiline
           maxRows={4}
-          sx={{ width: "300px" }}
+          sx={{ width: { xs: "80%", sm: "300px" } }}
         />
 
         <TextField
           id="outlined-textarea"
           label="Email"
           placeholder="Placeholder"
-          sx={{ width: "300px" }}
+          sx={{ width: { xs: "80%", sm: "300px" } }}
         />
       </Stack>
       <Stack alignItems="center" justifyContent="center" sx={{ pt: 1 }}>
@@ -82,7 +82,7 @@ export default function Form() {
           multiline
           rows={6}
           fullWidth
-          sx={{ width: "612px" }}
+          sx={{ width: { xs: "80%", sm: "612px" } }}
         />
       </Stack>
       <Stack alignItems="center" justifyContent="center" sx={{ pt: 2 }}>
@@ -93,7 +93,7 @@ export default function Form() {
             color: "#fff",
             height: "58px",
             fontWeight: 700,
-            width: "200px",
+            width: { xs: "80%", sm: "200px" },
           }}
         >
           ENVIAR

@@ -1,22 +1,9 @@
 "use client";
 
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
-import Masonry from "@mui/lab/Masonry";
-import { styled } from "@mui/material/styles";
+import { Box, Typography } from "@mui/material";
+import { Masonry } from "@mui/lab";
 import { itemData } from "@/constants";
-import { Typography } from "@mui/material";
 import { dosis } from "@/fonts";
-
-const Label = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(0.5),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-  borderBottomLeftRadius: 0,
-  borderBottomRightRadius: 0,
-}));
 
 export default function Galery() {
   return (
@@ -26,7 +13,7 @@ export default function Galery() {
         alignItems: "center",
         justifyContent: "center",
         m: "0 auto",
-        width: 1090,
+        width: { xs: "100%", sm: 600, md: 900, lg: 1090 },
         minHeight: 829,
       }}
     >
@@ -34,17 +21,17 @@ export default function Galery() {
         className={dosis.className}
         sx={{
           color: "#333",
-          fontSize: "36px",
+          fontSize: { xs: "24px", sm: "30px", md: "36px" },
           fontWeight: 500,
-          pt: 14,
-          pb: 10,
+          pt: { xs: 8, md: 14 },
+          pb: { xs: 6, md: 10 },
           lineHeight: 1.1,
           textAlign: "center",
         }}
       >
         GALERIA
       </Typography>
-      <Masonry columns={3} spacing={2}>
+      <Masonry sx={{ pl: 2 }} columns={{ xs: 1, sm: 2, md: 3 }} spacing={2}>
         {itemData.map((item, index) => (
           <div key={index}>
             <img

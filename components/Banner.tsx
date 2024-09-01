@@ -1,15 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Box, Stack, Typography } from "@mui/material";
+import { ArrowCircleDown, Place } from "@mui/icons-material";
 import BannerButtonContato from "@/components/BannerButtonContato";
 import BannerButtonVisita from "@/components/BannerButtonVisita";
 import BannerText from "@/components/BannerText";
 import anabeatriz from "@/public/images/anabeatriz.jpg";
-import { ArrowCircleDown, Place } from "@mui/icons-material";
-import { useState } from "react";
-import NavBarMobile from "./NavBarMobile";
+import NavBarMobile from "@/components/NavBarMobile";
 
 const Banner = () => {
   const [isVisible, setIsVisible] = useState(false);

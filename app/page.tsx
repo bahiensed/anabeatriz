@@ -15,7 +15,7 @@ export default function Home() {
       <SocialProofCarousel />
       <Galery />
       <Form />
-      <BannerAppointment />
+      
     </div>
   );
 }
