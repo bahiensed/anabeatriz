@@ -25,8 +25,10 @@ const Banner = () => {
         backgroundColor: "#047b8b",
         margin: 0,
         marginLeft: 0,
+        marginRight: 0,
         height: "100vh",
         padding: 0,
+        position: "absolute",
         width: "100%",
       }}
     >

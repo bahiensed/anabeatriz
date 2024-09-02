@@ -16,6 +16,7 @@ export default function Form() {
 
   return (
     <Box
+      id="contact"
       component="form"
       sx={{
         backgroundColor: "#fff",

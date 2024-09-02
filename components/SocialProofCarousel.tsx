@@ -21,7 +21,7 @@ import Image from "next/image";
 
 export default function SocialProofCarousel() {
   return (
-    <Box>
+    <Box id="reviews">
       <Typography
         className={dosis.className}
         sx={{
@@ -100,7 +100,6 @@ export default function SocialProofCarousel() {
         .swiper-button-next,
         .swiper-button-prev {
           color: #fff;
-     
         }
         .swiper-button-next::after,
         .swiper-button-prev::after {

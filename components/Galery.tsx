@@ -8,7 +8,7 @@ import { dosis } from "@/fonts";
 export default function Galery() {
   return (
     <Box
-      id="galery"
+      id="gallery"
       sx={{
         alignItems: "center",
         justifyContent: "center",

@@ -73,7 +73,7 @@ const Navigation = () => {
             Reviews
           </BootstrapButton>
         </Link>
-        <Link href="#galery">
+        <Link href="#gallery">
           <BootstrapButton
             className={dosis.className}
             /*   onClick={handleCloseNavMenu} */
