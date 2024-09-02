@@ -1,15 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Box, Stack, Typography } from "@mui/material";
+import { ArrowCircleDown, Place } from "@mui/icons-material";
 import BannerButtonContato from "@/components/BannerButtonContato";
 import BannerButtonVisita from "@/components/BannerButtonVisita";
 import BannerText from "@/components/BannerText";
 import anabeatriz from "@/public/images/anabeatriz.jpg";
-import { ArrowCircleDown, Place } from "@mui/icons-material";
-import { useState } from "react";
-import NavBarMobile from "./NavBarMobile";
+import NavBarMobile from "@/components/NavBarMobile";
 
 const Banner = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,8 +25,10 @@ const Banner = () => {
         backgroundColor: "#047b8b",
         margin: 0,
         marginLeft: 0,
-        height: "700px",
+        marginRight: 0,
+        height: "100vh",
         padding: 0,
+        position: "absolute",
         width: "100%",
       }}
     >
@@ -42,7 +44,7 @@ const Banner = () => {
               border: "2.5px solid white",
               borderRadius: "50%",
               height: "200px",
-              marginTop: "40px",
+              marginTop: "30px",
               width: "200px",
             }}
           />
@@ -88,7 +90,7 @@ const Banner = () => {
             border: "2.5px solid white",
             borderRadius: "50%",
             height: "220px",
-            marginTop: "50px",
+            marginTop: "5%",
             width: "220px",
           }}
         />
@@ -126,7 +128,11 @@ const Banner = () => {
           </Stack>
         </Stack>
 
-        <Stack alignItems="center" justifyContent="center" sx={{ mt: 2 }}>
+        <Stack
+          alignItems="center"
+          justifyContent="center"
+          sx={{ ml: 4, mt: 3 }}
+        >
           <Link href="#menu">
             <ArrowCircleDown
               onClick={toggleMenu}

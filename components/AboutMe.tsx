@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <>
       {/* Mobile */}
-      <Stack id="aboutme" sx={{ display: { xs: "block", md: "none" }, py: 5 }}>
+      <Stack id="aboutme" sx={{ display: { xs: "block", md: "none" }, py: 5, }}>
         <Typography
           className={dosis.className}
           sx={{
@@ -25,7 +25,7 @@ const AboutMe = () => {
       </Stack>
 
       {/* Desktop */}
-      <Stack id="aboutme" sx={{ display: { xs: "none", md: "flex" }, py: 10 }}>
+      <Stack id="aboutme" sx={{ display: { xs: "none", md: "flex" }, py: 10,}}>
         <Typography
           className={dosis.className}
           sx={{

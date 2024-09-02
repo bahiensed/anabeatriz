@@ -5,6 +5,8 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Stack } from "@mui/material";
+import Link from "next/link";
 
 export default function NavBarMobile() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -17,7 +19,7 @@ export default function NavBarMobile() {
   };
 
   return (
-    <div>
+    <Stack sx={{ position: "absolute" }}>
       <Button
         id="basic-button"
         aria-controls={open ? "basic-menu" : undefined}
@@ -25,7 +27,7 @@ export default function NavBarMobile() {
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
-        <MenuIcon sx={{color:"#fff", fontSize:"40px"}}/>
+        <MenuIcon sx={{ color: "#fff", fontSize: "40px" }} />
       </Button>
       <Menu
         id="basic-menu"
@@ -36,10 +38,22 @@ export default function NavBarMobile() {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        <Link href="#aboutme">
+          <MenuItem onClick={handleClose}>Sobre Mim</MenuItem>
+        </Link>
+        <Link href="#map">
+          <MenuItem onClick={handleClose}>Endereço</MenuItem>
+        </Link>
+        <Link href="#reviews">
+          <MenuItem onClick={handleClose}>Reviews</MenuItem>
+        </Link>
+        <Link href="#gallery">
+          <MenuItem onClick={handleClose}>Galeria</MenuItem>
+        </Link>
+        <Link href="#contact">
+          <MenuItem onClick={handleClose}>Contato</MenuItem>
+        </Link>
       </Menu>
-    </div>
+    </Stack>
   );
 }

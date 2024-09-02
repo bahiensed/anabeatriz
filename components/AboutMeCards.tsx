@@ -16,6 +16,7 @@ import { dosis, openSans } from "@/fonts";
 export default function MasonryWithVariableHeightItems() {
   return (
     <Box
+      id="aboutme"
       sx={{
         alignItems: "center",
         justifyContent: "center",
@@ -24,7 +25,7 @@ export default function MasonryWithVariableHeightItems() {
         width: "100%", // Ensure the Box takes up the full width of its container
       }}
     >
-      <Stack sx={{ alignItems: "center", justifyContent: "center",  }}>
+      <Stack sx={{ alignItems: "center", justifyContent: "center" }}>
         <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={4}>
           {cardsData.map((item, i) => (
             <Paper key={i} elevation={0} sx={{ pb: { xs: 2, md: 4 } }}>
