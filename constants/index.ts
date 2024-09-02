@@ -79,14 +79,12 @@ export const cardsData = [
     check: CheckBoxOutlined,
   },
   {
-    title: "Redes Sociais",
+    title: "Mais Informações",
     icon: FilterDrama,
     content: [
-      "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus.",
+      "Colocar apenas Lattes e LinkedIn",
     ],
     social:[
-      Facebook,
-      Instagram,
       LinkedIn
     ]
   },
