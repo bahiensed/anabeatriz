@@ -91,7 +91,7 @@ export const cards = [
 
 export const images = [
   {
-    url: "/greenoffice.jpg",
+    url: "/images/greenoffice.jpg",
     alt: "Green Office",
   },
   {
