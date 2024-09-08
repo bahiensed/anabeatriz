@@ -24,6 +24,7 @@ const BannerButtonConsulta = () => {
             color: "#333",
             fontWeight: 600,
             textTransform: "uppercase",
+            whiteSpace: "nowrap",
             width: {xs: "256px", md: "200px"},
             height: "48px",
           }}

@@ -13,7 +13,8 @@ const BannerText = () => {
             md: "48px",
             lg: "64px"
           },
-          textAlign: "center",      
+          fontWeight: 100,
+          textAlign: "center",
           textTransform: "uppercase"
         }}
         variant="h2"
@@ -31,6 +32,7 @@ const BannerText = () => {
             md: "24px",
             lg: "32px"
           },
+          fontWeight: 100,
           letterSpacing: 2,
           textAlign: "center",
           textTransform: "uppercase"
