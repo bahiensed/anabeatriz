@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Box, Typography } from '@mui/material'
 import { Place } from '@mui/icons-material'
-import { dosis, inter, openSans } from "@/fonts";
+import { dosis, openSans } from "@/fonts";
 
 const BannerLocation = () => {
   return (
