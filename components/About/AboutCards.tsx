@@ -81,7 +81,7 @@ export default function MasonryWithVariableHeightItems() {
                   />
                 </Link>
 
-                <Link href="https://www.linkedin.com/in/" target="_blank">
+                <Link href="https://www.linkedin.com/in/anabeatrizwintertavares/" target="_blank">
                   <LinkedIn
                     sx={{
                       color: "#008bc2",
