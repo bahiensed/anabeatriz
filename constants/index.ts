@@ -91,19 +91,19 @@ export const cards = [
 
 export const images = [
   {
-    url: "http://localhost:3000/images/greenoffice.jpg",
+    url: "/greenoffice.jpg",
     alt: "Green Office",
   },
   {
-    url: "http://localhost:3000/images/anabeatriz.gif",
+    url: "/images/anabeatriz.gif",
     alt: "Ana Beatriz",
   },
   {
-    url: "http://localhost:3000/images/consultorio.jpeg",
+    url: "/images/consultorio.jpeg",
     alt: "Consultório",
   },
   {
-    url: "http://localhost:3000/images/recepcao.jpeg",
+    url: "/images/recepcao.jpeg",
     alt: "Recepção",
   },
   {
@@ -115,7 +115,7 @@ export const images = [
     alt: "Honey",
   },
   {
-    url: "http://localhost:3000/images/anabeatriz.jpeg",
+    url: "/images/anabeatriz.jpeg",
     alt: "Ana Beatriz",
   },
   {
@@ -161,16 +161,16 @@ export const reviews = [
   {
     patient: "Rosangela C.",
     content: "Excelente profissional. Competente, atenciosa, pontual, transmite calma e confiança ao paciente. Recomendo.",
-    profile: "http://localhost:3000/images/razul.png"
+    profile: "/images/razul.png"
   },
   {
     patient: "Douglas B.",
     content: "A Dr.ª Ana Beatriz é muito atenciosa. Realiza o acompanhamento completo durante o tratamento.",
-    profile: "http://localhost:3000/images/douglasb.png"
+    profile: "/images/douglasb.png"
   },
   {
     patient: "Daniela R.",
     content: "Excelente médica! Atenciosa, competente, disposta a ouvir e resolver os problemas. Nota 1.000 para essa médica tão dedicada!",
-    profile: "http://localhost:3000/images/dlaranja.png"
+    profile: "/images/dlaranja.png"
   },
 ];
