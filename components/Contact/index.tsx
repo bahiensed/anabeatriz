@@ -4,11 +4,12 @@ import { dosis } from "@/fonts";
 export default function Form() {
   return (
     <Box
+      id="contact"
       sx={{
         backgroundColor: "#fff",
         color: "#343434",
         px: { xs: 4, md: 16 },
-        py: 10,
+        py: 6,
         textAlign: "center",
       }}
     >
