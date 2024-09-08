@@ -29,7 +29,7 @@ const About = () => {
           textTransform: 'uppercase'
         }}
       >
-        Informações sobre mim
+        Informações <span style={{ whiteSpace: 'nowrap' }}>sobre mim</span>
       </Typography>
 
       <AboutCards />
