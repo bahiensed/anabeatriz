@@ -9,8 +9,8 @@ const BannerImage = () => {
         border: "3.2px solid white",
         borderRadius: "50%",
         overflow: "hidden",
-        width: { xs: "140px", sm: "160px", md: "180px", lg: "200px" },
-        height: { xs: "140px", sm: "160px", md: "180px", lg: "200px" },
+        width: { xs: "160px", md: "180px", lg: "200px" },
+        height: { xs: "160px", md: "180px", lg: "200px" },
        }}
     >
       <Image
