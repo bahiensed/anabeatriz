@@ -95,7 +95,7 @@ export const images = [
     alt: "Green Office",
   },
   {
-    url: "/images/anabeatriz.gif",
+    url: "/images/anabw.png",
     alt: "Ana Beatriz",
   },
   {
