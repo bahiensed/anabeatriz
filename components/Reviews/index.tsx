@@ -12,13 +12,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 //import required modules
 import { Navigation, Keyboard } from "swiper/modules";
-
 import { FormatQuote } from "@mui/icons-material";
-
 import { reviews } from "@/constants";
-import { dosis, openSans } from "@/fonts";
-import doctorImage from "@/public/images/doctorImage.png";
-
 
 export default function Reviews() {
   return (
@@ -31,8 +26,8 @@ export default function Reviews() {
         }}
       >
         <Typography
-          className={dosis.className}
           sx={{
+            fontFamily: "Dosis, sans-serif",
             fontSize: { xs: '32px', md: '42px' },
             fontWeight: 500,
             letterSpacing: 2,
@@ -80,9 +75,9 @@ export default function Reviews() {
               />
 
               <Typography
-                className={openSans.className}
                 sx={{
                   color: "#fff",
+                  fontFamily: "openSans, sans-serif",
                   fontSize: { xs: "16px", md: "20px" },
                   margin: "32px auto 28px auto",
                   width: {xs:"75%", md: "64%"}
@@ -114,9 +109,9 @@ export default function Reviews() {
                   spacing={1}
                 >
                   <Typography
-                    className={openSans.className}
                     sx={{
                       color: "#fff",
+                      fontFamily: "openSans, sans-serif",
                       fontSize: { xs: "16px", md: "18px" },
                     }}
                   >

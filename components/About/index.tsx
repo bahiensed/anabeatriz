@@ -1,11 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import AboutCards from "@/components/About/AboutCards";
-import { dosis } from "@/fonts";
 
 const About = () => {
   return (
-    <>
-      <Box
+    <Box
       id="about"
       sx={{
         alignItems: "center",
@@ -17,9 +15,9 @@ const About = () => {
       }}
     >
       <Typography
-        className={dosis.className}
         sx={{
           color: "#343434",
+          fontFamily: "Dosis, sans-serif",
           fontSize: { xs: '32px', md: '42px' },
           fontWeight: 500,
           letterSpacing: 2,
@@ -34,8 +32,7 @@ const About = () => {
 
       <AboutCards />
 
-      </Box>
-    </>
+    </Box>
   );
 };
 

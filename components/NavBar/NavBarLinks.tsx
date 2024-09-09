@@ -1,9 +1,7 @@
 import Link from "next/link";
 
 import { Box, Button, Stack, styled } from "@mui/material";
-
 import { links } from "@/constants";
-import { dosis } from "@/fonts";
 
 const BootstrapButton = styled(Button)({
   "&:focus": {
@@ -30,9 +28,9 @@ const NavBarLinks = () => {
       {links.map((link) => (
         <Link href={link.href} key={link.desc}>
           <BootstrapButton
-            className={dosis.className}
             sx={{
               color: "#343434",
+              fontFamily: "Dosis, sans-serif",
               fontSize: "16px",
               fontWeight: 600,
               mx: 1,

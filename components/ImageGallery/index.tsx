@@ -3,7 +3,6 @@
 import { Box, Typography } from "@mui/material";
 import { Masonry } from "@mui/lab";
 import { images } from "@/constants";
-import { dosis } from "@/fonts";
 
 export default function Gallery() {
   return (
@@ -23,8 +22,8 @@ export default function Gallery() {
       }}
     >
       <Typography
-        className={dosis.className}
         sx={{
+          fontFamily: "Dosis, sans-serif",
           fontSize: { xs: '32px', md: '42px' },
           fontWeight: 500,
           letterSpacing: 2,

@@ -1,19 +1,19 @@
 import { Box, Typography } from "@mui/material";
-import { dosis, openSans } from "@/fonts";
 
 const BannerText = () => {
   return (
     <Box>
       <Typography
-        className={openSans.className}
         sx={{
+          color: "#fff",
+          fontFamily: "Open Sans, sans-serif",
           fontSize: {
             xs: "36px",
             sm: "40px",
             md: "48px",
             lg: "64px"
           },
-          fontWeight: 100,
+          fontWeight: 200,
           textAlign: "center",
           textTransform: "uppercase"
         }}
@@ -23,16 +23,16 @@ const BannerText = () => {
       </Typography>
 
       <Typography
-        className={dosis.className}
         sx={{
           color: "#cab882",
+          fontFamily: "Dosis, sans-serif",
           fontSize: {
             xs: "18px",
             sm: "20px",
             md: "24px",
             lg: "32px"
           },
-          fontWeight: 100,
+          fontWeight: 200,
           letterSpacing: 2,
           textAlign: "center",
           textTransform: "uppercase"

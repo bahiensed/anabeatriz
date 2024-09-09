@@ -1,5 +1,4 @@
 import { Box, Button, Grid2 as Grid, TextField, Typography } from "@mui/material";
-import { dosis } from "@/fonts";
 
 export default function Form() {
   return (
@@ -14,8 +13,8 @@ export default function Form() {
       }}
     >
       <Typography
-        className={dosis.className}
         sx={{
+          fontFamily: "Dosis, sans-serif",
           fontSize: { xs: '32px', md: '42px' },
           fontWeight: 500,
           letterSpacing: 2,
@@ -26,8 +25,8 @@ export default function Form() {
       </Typography>
 
       <Typography
-        className={dosis.className}        
         sx={{
+          fontFamily: "Dosis, sans-serif",
           fontSize: { xs: '22px', md: '32px' },
           fontWeight: 500,
           letterSpacing: 2,
@@ -67,11 +66,11 @@ export default function Form() {
 
           <Grid size={12}>
             <Button
-              className={dosis.className}
               sx={{
                 backgroundColor: "#038C8C",
                 borderRadius: 10,
                 color: "#fff",
+                fontFamily: "Dosis, sans-serif",
                 fontWeight: 700,
                 width: "200px",
                 height: "48px",

@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { Box, Typography } from '@mui/material'
 import { Place } from '@mui/icons-material'
-import { dosis, openSans } from "@/fonts";
 
 const BannerLocation = () => {
   return (
@@ -14,9 +13,9 @@ const BannerLocation = () => {
 
       <Link href="#map">
         <Typography
-          className={dosis.className}
           sx={{
             color: "#fff",
+            fontFamily: "Dosis, sans-serif",
             fontWeight: 600,
             textTransform: "uppercase"
           }}

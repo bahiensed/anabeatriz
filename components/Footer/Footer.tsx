@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Box, Typography } from '@mui/material';
 import { FavoriteBorder, Web } from '@mui/icons-material';
-import { dosis, openSans } from '@/fonts';
 
 const Footer = () => {
   const date = new Date();
@@ -10,9 +9,9 @@ const Footer = () => {
   return (
     <>
       <Box
-        className={openSans.className} 
         sx={{
           color: "#333",
+          fontFamily: "openSans, sans-serif",
           height: "72px",
           paddingTop: "58px",
           textAlign: "center",
@@ -30,8 +29,8 @@ const Footer = () => {
           textAlign: {xs:"center", md: "right"},
         }}
       >
-        <Typography className={dosis.className}>
-          <Web sx={{ color:"#333", fontSize: "small", mt: 0.9, verticalAlign: "top" }} /> made with <FavoriteBorder sx={{ color: "red", fontSize: "small", mt: 0.9, verticalAlign: "top" }} /> by <Link href="https://bahien.se" target="_blank" style={{ textDecoration: "underline" }}>bahien.se</Link>
+        <Typography>
+          <Web sx={{ color:"#333", fontFamily: "Dosis, sans-serif", fontSize: "small", mt: 0.9, verticalAlign: "top" }} /> made with <FavoriteBorder sx={{ color: "red", fontSize: "small", mt: 0.9, verticalAlign: "top" }} /> by <Link href="https://bahien.se" target="_blank" style={{ textDecoration: "underline" }}>bahien.se</Link>
         </Typography>
       </Box>
     </>

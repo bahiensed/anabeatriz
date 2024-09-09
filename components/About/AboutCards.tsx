@@ -6,8 +6,6 @@ import { Masonry } from "@mui/lab";
 import { Box, Paper, Typography } from "@mui/material";
 import { CheckBoxOutlined, Instagram, LinkedIn } from "@mui/icons-material";
 import { cards } from "@/constants";
-import { dosis, openSans } from "@/fonts";
-import { red } from "@mui/material/colors";
 
 export default function MasonryWithVariableHeightItems() {
   return (
@@ -31,9 +29,9 @@ export default function MasonryWithVariableHeightItems() {
             </Typography>
 
             <Typography
-              className={dosis.className}
               sx={{
                 color: "#343434",
+                fontFamily: "Dosis, sans-serif",
                 fontSize: "20px",
                 fontWeight: 500,
                 textAlign: "center",
@@ -47,9 +45,9 @@ export default function MasonryWithVariableHeightItems() {
             {card.content.map((text) => (
               <>
                 <Typography
-                  className={openSans.className}
                   sx={{
                     color: "#343434",
+                    fontFamily: "openSans, sans-serif",
                     lineHeight: 1.6,
                     pb: 2
                   }}

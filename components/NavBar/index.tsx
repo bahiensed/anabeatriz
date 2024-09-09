@@ -5,7 +5,6 @@ import Image from "next/image";
 import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 import NavBarLinks from "@/components/NavBar/NavBarLinks";
 import NavBarButtonVisita from "@/components/NavBar/NavBarButtonVisita";
-import { dosis } from "@/fonts";
 import logo from "@/public/images/logo.png";
 
 function NavBar() {
@@ -80,17 +79,21 @@ function NavBar() {
               }}
             >
               <Typography
-                className={dosis.className}
                 variant="h6"
-                sx={{ color: "#000", lineHeight: 1, textTransform: "uppercase" }}
+                sx={{
+                  color: "#000",
+                  fontFamily: "Dosis, sans-serif",
+                  lineHeight: 1,
+                  textTransform: "uppercase"
+                }}
               >
                 Ana Beatriz Winter
               </Typography>
 
               <Typography
-                className={dosis.className}
                 sx={{
                   color: "#343434",
+                  fontFamily: "Dosis, sans-serif",
                   fontSize: "12px",
                   textTransform: "uppercase",
                 }}

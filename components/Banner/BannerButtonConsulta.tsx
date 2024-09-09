@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Box, Button, styled } from "@mui/material";
 import { Today } from "@mui/icons-material";
-import { dosis } from "@/fonts";
 
 const BootstrapButton = styled(Button)({
   "&:hover": {
@@ -15,13 +14,12 @@ const BannerButtonConsulta = () => {
     <Box>
       <Link href="https://api.whatsapp.com/send?phone=5524999882200" target="_blank">
         <BootstrapButton
-          className={dosis.className}
-
           sx={{
             backgroundColor: "#fff",
             border: "2px solid #fff",
             borderRadius: "25px",
             color: "#333",
+            fontFamily: "Dosis, sans-serif",
             fontWeight: 600,
             textTransform: "uppercase",
             whiteSpace: "nowrap",
