@@ -42,7 +42,7 @@ export default function Form() {
             <TextField
               id="name"
               label="Nome"
-              fullWidth              
+              fullWidth
             />
           </Grid>
 
