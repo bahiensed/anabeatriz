@@ -1,29 +1,27 @@
 import {
-  Article,
-  Chat,
+  ArticleOutlined,
   CheckBoxOutlined,
-  EmojiEvents,
-  Facebook,
+  EmojiEventsOutlined,
   FilterDrama,
   HowToReg,
-  Instagram,
   LinkedIn,
+  MedicalServices,
   MonitorHeart,
   School,
 } from "@mui/icons-material";
 
-export const cardsData = [
+export const cards = [
   {
     title: "Experiências Profissionais",
-    icon: Chat,
+    icon: MedicalServices,
     content: [
-      "Professora associada de Endocrinologia na faculdade de Ciências Médicas (FCM) da UERJ desde 2016.",
-      "Secretaria executiva da sociedade brasileira de endocrinooogia -regional RJ (2020/22 e 2023/24).",
-      "Coordenadora de pesquisa da Faculdade de Ciências Médicas da FCM (2024/28).",
-      "Professora do programa de pós-graduação em Fisiopatolologia Clínica e Experimental da FCM UERJ.",
+      "Professora Associada de Endocrinologia na Faculdade de Ciências Médicas (FCM) da UERJ desde 2016.",
+      "Professora do Programa de Pós-Graduação em Fisiopatolologia Clínica e Experimental da FCM UERJ.",
+      "Coordenadora de pesquisa da Faculdade de Ciências Médicas da FCM (2024-2028).",
+      "Secretaria Executiva da Sociedade Brasileira de Endocrinooogia, Regional RJ (2020-2022 e 2023-2024).",
       "Ex-professora da Faculdade de Medicina de Petrópolis (2007-2023).",
-      "Ex-chefe do Departamento de Medicina Interna da FCM UERJ (2021/23).",
-      "Médica endocrinologista do Hospital Umiversitario Pedro Ernesto da UERJ (2012-2016).",
+      "Ex-chefe do Departamento de Medicina Interna da FCM UERJ (2021-2023).",
+      "Médica endocrinologista do Hospital Universitário Pedro Ernesto da UERJ (2012-2016).",
     ],
   },
   {
@@ -43,9 +41,28 @@ export const cardsData = [
     title: "Registros Profissionais",
     icon: HowToReg,
     content: [
-      "CRM RJ 737470",
-      "RQE Endocrinologia e Metabologia 14091",
-      "RQE Clínica Médica 15964",
+      "CRM RJ: 737470",
+      "RQE Clínica Médica: 15964",
+      "RQE Endocrinologia e Metabologia: 14091",
+    ],
+    check: CheckBoxOutlined,
+  },
+  {
+    title: "Publicações",
+    icon: ArticleOutlined,
+    content: [
+      "Diabetes",
+      "Obesidade",
+      "Osteoporose",
+      "Climatério / Menopausa",
+      "Endocrinologia Pediátrica",
+      "Enfermidades da Tireoide",
+      "Enfermidades da Hipófise",
+      "Enfermidades das Adrenais",
+      "Enfermidades dos Ovários",
+      "Dislipidemia",
+      "Distúrbios do Metabolismo Ósseo",
+      "Doenças Testiculares",
     ],
     check: CheckBoxOutlined,
   },
@@ -53,134 +70,114 @@ export const cardsData = [
     title: "Tratamentos",
     icon: MonitorHeart,
     content: [
-      "Diabetes",
-      "Obesidade",
-      "Dislipidemia",
-      "Climatério/ menopausa",
-      "Doenças da tireoide",
-      "Doenças da hipófise",
-      "Doenças das adrenais",
-      "Doenças dos ovários",
-      "Distúrbios do metabolismo ósseo / osteoporose",
-      "Doenças testiculares",
-      "Endocrinologia pediátrica",
+      "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus.",
     ],
     check: CheckBoxOutlined,
   },
   {
     title: "Prêmios",
-    icon: EmojiEvents,
+    icon: EmojiEventsOutlined,
     content: [
       "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus. ",
     ],
     check: CheckBoxOutlined,
   },
   {
-    title: "Publicações",
-    icon: Article,
-    content: [
-      "Lorem ipsum eget risus tristique odio lacus volutpat",
-      "praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla",
-      "arcu fames luctus.leo lectus venenat consectetur dui ad sagittis sapien integer nullam,",
-      "eu habitant leo potenti id interdum dolor neque ante, placerat metus bibendum commodo suscipit massa nisl",
-      "posuere. neque class auctor facilisis aenean est lobortis molestie posuere, amet loborti habitant quam leo dictum quam congue,",
-      "vestibulum est dictumst convallis pellentesque felis lacinia. laoreet est pharetra varius justo suspendisse lorem",
-    ],
-    check: CheckBoxOutlined,
-  },
-  {
     title: "Mais Informações",
     icon: FilterDrama,
-    content: ["Colocar apenas Lattes e LinkedIn"],
-    social: [LinkedIn],
+
+    content: [],
+    social:[
+      LinkedIn
+    ]
   },
 ];
 
-export const itemData = [
+
+
+
+export const images = [
   {
-    img: "https://images.unsplash.com/photo-1518756131217-31eb79b20e8f",
-    title: "Fern",
+    url: "/images/greenoffice.jpg",
+    alt: "Green Office",
   },
   {
-    img: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f",
-    title: "Snacks",
+    url: "/images/anabw.png",
+    alt: "Ana Beatriz",
   },
   {
-    img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
-    title: "Mushrooms",
+    url: "/images/consultorio.jpeg",
+    alt: "Consultório",
   },
   {
-    img: "https://images.unsplash.com/photo-1529655683826-aba9b3e77383",
-    title: "Tower",
+    url: "/images/recepcao.jpeg",
+    alt: "Recepção",
   },
   {
-    img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
-    title: "Sea star",
+    url: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
+    alt: "Coffee",
   },
   {
-    img: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
-    title: "Honey",
+    url: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
+    alt: "Honey",
   },
   {
-    img: "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6",
-    title: "Basketball",
+    url: "/images/anabeatriz.jpeg",
+    alt: "Ana Beatriz",
   },
   {
-    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
-    title: "Breakfast",
+    url: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
+    alt: "Sea Star",
   },
   {
-    img: "https://images.unsplash.com/photo-1627328715728-7bcc1b5db87d",
-    title: "Tree",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
-    title: "Burger",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
-    title: "Camera",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
-    title: "Coffee",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1627000086207-76eabf23aa2e",
-    title: "Camping Car",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
-    title: "Hats",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
-    title: "Tomato basil",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1627328561499-a3584d4ee4f7",
-    title: "Mountain",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
-    title: "Bike",
+    url: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+    alt: "Breakfast",
   },
 ];
 
-export const carouselData = [
+
+
+
+export const links = [
   {
-    text: "Lorem ipsum dolor sit amet. Sit quis nemo eos praesentium internos sed impedit obcaecati et nobis magnam.",
+    desc: "Sobre Mim",
+    href: "#about",
   },
   {
-    text: "Lorem ipsum dolor sit amet. Sit quis nemo eos praesentium internos sed impedit obcaecati et nobis magnam.",
+    desc: "Endereço",
+    href: "#map",
   },
   {
-    text: "Lorem ipsum dolor sit amet. Sit quis nemo eos praesentium internos sed impedit obcaecati et nobis magnam.",
+    desc: "Reviews",
+    href: "#reviews",
   },
   {
-    text: "Lorem ipsum dolor sit amet. Sit quis nemo eos praesentium internos sed impedit obcaecati et nobis magnam.",
+    desc: "Galeria",
+    href: "#gallery",
   },
   {
-    text: "Lorem ipsum dolor sit amet. Sit quis nemo eos praesentium internos sed impedit obcaecati et nobis magnam.",
+    desc: "Contato",
+    href: "#contact",
+  },
+];
+
+
+
+
+export const reviews = [
+  {
+    patient: "Rosangela C.",
+    content: "Excelente profissional. Competente, atenciosa, pontual, transmite calma e confiança ao paciente. Recomendo.",
+    profile: "/images/razul.png"
+  },
+  {
+    patient: "Douglas B.",
+    content: "A Dr.ª Ana Beatriz é muito atenciosa. Realiza o acompanhamento completo durante o tratamento.",
+    profile: "/images/douglasb.png"
+  },
+  {
+    patient: "Daniela R.",
+    content: "Excelente médica! Atenciosa, competente, disposta a ouvir e resolver os problemas. Nota 1.000 para essa médica tão dedicada!",
+    profile: "/images/dlaranja.png"
   },
 ];
