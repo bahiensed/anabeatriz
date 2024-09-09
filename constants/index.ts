@@ -53,7 +53,17 @@ export const cardsData = [
     title: "Tratamentos",
     icon: MonitorHeart,
     content: [
-      "Lorem ipsum eget risus tristique odio lacus volutpat, praesent ipsum torquent amet condimentum pellentesque aptent, rutrum iaculis nulla arcu fames luctus.",
+      "Diabetes",
+      "Obesidade",
+      "Dislipidemia",
+      "Climatério/ menopausa",
+      "Doenças da tireoide",
+      "Doenças da hipófise",
+      "Doenças das adrenais",
+      "Doenças dos ovários",
+      "Distúrbios do metabolismo ósseo / osteoporose",
+      "Doenças testiculares",
+      "Endocrinologia pediátrica",
     ],
     check: CheckBoxOutlined,
   },
@@ -81,12 +91,8 @@ export const cardsData = [
   {
     title: "Mais Informações",
     icon: FilterDrama,
-    content: [
-      "Colocar apenas Lattes e LinkedIn",
-    ],
-    social:[
-      LinkedIn
-    ]
+    content: ["Colocar apenas Lattes e LinkedIn"],
+    social: [LinkedIn],
   },
 ];
 
