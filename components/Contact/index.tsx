@@ -38,7 +38,7 @@ export default function Form() {
 
       <form>
         <Grid container spacing={2}>
-          <Grid size={{xs: 12, md: 6}}>
+          <Grid size={{xs: 12, md: 4}}>
             <TextField
               id="name"
               label="Nome"
@@ -46,12 +46,21 @@ export default function Form() {
             />
           </Grid>
 
-          <Grid size={{xs: 12, md: 6}}>
-          <TextField
-              id="email"
-              label="E-mail"
-              fullWidth              
-            />
+          <Grid size={{xs: 12, md: 4}}>
+            <TextField
+                id="email"
+                label="E-mail"
+                fullWidth              
+              />
+          </Grid>
+
+          <Grid size={{xs: 12, md: 4}}>
+            <TextField
+                id="telefone"
+                label="Telefone"
+                placeholder="(24) 99876-5432"
+                fullWidth              
+              />
           </Grid>
 
           <Grid size={12}>
