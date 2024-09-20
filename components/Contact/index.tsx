@@ -20,7 +20,7 @@ export default function Form() {
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (name === "" || email === "" || mobile === "" || message === "") {
-      alert("Preencha todos os campos");
+      alert("Por favor, preencha todos os campos do formulário!");
       return;
     }
 
@@ -32,10 +32,10 @@ export default function Form() {
     };
     emailjs
       .send(
-        "service_bw8f668",
-        "template_8j3alpu",
+        "service_3h3nxwp",
+        "template_so7wgmt",
         templateParams,
-        "gyNXx6X731HeZGt3R"
+        "xPZd6h5LgMP-3e8LD"
       )
       .then(
         (response) => {
@@ -48,26 +48,9 @@ export default function Form() {
           setMessage("");
         },
         (error) => {
-          console.log("ERRO: ", error);
+          console.log("Erro: ", error);
         }
       );
-
-    /*  try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        body: JSON.stringify({
-          name,
-          email,
-          mobile,
-          message,
-        }),
-        headers: {
-          "content-type": "application/json",
-        },
-      });
-    } catch (error: any) {
-      console.error("Error", error);
-    } */
   };
 
   return (
