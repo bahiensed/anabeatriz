@@ -38,24 +38,25 @@ export const cards = [
     check: CheckBoxOutlined,
   },
   {
-    title: "Registros Profissionais",
-    icon: HowToReg,
+    title: "Publicações",
+    icon: ArticleOutlined,
     content: [
-      "CRM RJ: 737470",
-      "Clínica Médica RQE:15964",
-      "Endocrinologia e Metabologia RQE:14091",
+      "CAVALCANTE, R.B.M.; LEÃO, L.M.C.S.M.; TAVARES, Ana Beatriz Winter; LOPES, K.G.; KRAEMER-AGUIAR, L.G. Fat Distribution and its Correlation with Insulin Resistance, Androgen Markers, and Proinflammatory Cytokines in Polycystic Ovary Syndrome. HORMONE AND METABOLIC RESEARCH, 2024.",
+      "FÉLIX, T.M.; DE OLIVEIRA, B.M.; ARTIFON, M.; CARVALHO, I.; BERNARDI, F.A.; SCHWARTZ, I.V.D.; SAUTE, J.A.; FERRAZ, V.E.F. ; ACOSTA, A.X.; SORTE, N.B.; ALVES, D.; AMORIM, T.; ADJUTO, G.M.A.F.; ALMEIDA, R.E.S.; BRANDÃO, F.R.; BUENO, L.S.M.; DE ANDRADE, M.D.F.C.; CAGLIARI, C.I.; CARDOSO, M.T.; TAVARES, Ana Beatriz Winter. Epidemiology of rare diseases in Brazil: protocol of the Brazilian Rare Diseases Network (RARAS-BRDN). Orphanet Journal of Rare Diseases, v.17, p.1-13, 2022.",
+      "TAVARES, Ana Beatriz Winter; COLLETT-SOLBERG, P.F. Growth hormone deficiency and the transition from pediatric to adult care. Jornal de Pediatria, v.97, p.595-602, 2021.",
+      "WILDEMBERG, L.E.; DA SILVA CAMACHO, A.H.; MIRANDA, R.L.; ELIAS, P.C.L.; DE CASTRO MUSOLINO, N.R.; NAZATO, D.; JALLAD, R.; HUAYLLAS, M.K.P.; MOTA, J.I.; ALMEIDA, T.; PORTES, E.; RIBEIRO-OLIVEIRA, A.; VILAR, L.; BOGUSZEWSKI, C.L.; TAVARES, Ana Beatriz Winter; NUNES-NOGUEIRA, V.S.; MAZZUCO, T.L.; RECH, C.G.S.L.; MARQUES, N.V.; CHIMELLI, L. Machine learning-based prediction model for treatment of acromegaly with first-generation somatostatin receptor ligands. JOURNAL OF CLINICAL ENDOCRINOLOGY & METABOLISM, v.106(7), p.2047-2056, 2021.",
+      "TAVARES, Ana Beatriz Winter; SEIXAS DA SILVA, I.A.; SILVESTRE, D.H.S.; PINHEIRO, M.F.C.; VAISMAN, M.; CONCEIÇÃO, F.L. Growth hormone and cortisol secretion in the elderly evaluated using the glucagon stimulation test. ENDOCRINE, v.56, p.317-324, 2017.",
+      "TAVARES, Ana Beatriz Winter; SEIXAS DA SILVA, I.A.; SILVESTRE, D.H.S.; PAIXÃO, C.M.; VAISMAN, M.; CONCEIÇÃO, F.L. Potential risks of glucagon stimulation test in elderly people. Growth Hormone & IGF Research, v.25, p.53-56, 2015."
     ],
     check: CheckBoxOutlined,
   },
   {
-    title: "Publicações",
-    icon: ArticleOutlined,
+    title: "Registros Profissionais",
+    icon: HowToReg,
     content: [
-      "Tavares, Ana Beatriz Winter; Machado, M.; Kraemer-Aguiar, L.G.. A rare case of exophytic and ulcerated thyroid tumor with skin involvement. AACE CLINICAL CASE REPORTS, v.10, pp.33-34, 2024.",
-      "Reis, K.S.S.C.; Vianna, P.D.B.F.A.; Sanches, J.P.B.; Bregman, R.; Tavares, Ana Beatriz Winter. Correlation between thyroid function and urinary protein-to-creatinine ratio in patientes with chronic kidney disease stages 3 and 4. In: XXI Encontro Brasileiro de Tireoide, 2024, São Paulo. Archives of Endocrinology and Metabolism, 2024. v.68.",
-      "Oliveira, Y.I.L.A.; Sá, P.G.; Leão, L.M.C.S.M.; Tavares, Ana Beatriz Winter. Is there a correlation between thyroid function and ovarian reserve in subfertile women?. In: XIX Latin American Thyroid Congress, 2023, Curitiba.",
-      "Reis, K.S.S.C.; Sanches, J.P.B.; Bregman, R.; Tavares, Ana Beatriz Winter. Correlação entre hormônio tireoestimulante e taxa de filtração glomerular em portadores de doença renal crônica estágios 3 e 4. In: Congresso Científico HUPE, Jornada Acadêmica 87 anos, 2022, Rio de Janeiro.",
-      "Teixeira, P.F.S.; Tavares, Ana Beatriz Winter. Doenças da hipófise na gestação. Programa de Atualização em Ginecologia e Obstetrícia - PROAGO. Porto Alegre: Artmed/Panamericana Editora Ltda, 2011, v.8, pp.87-114.",
+      "CRM RJ:737470",
+      "Clínica Médica RQE:15964",
+      "Endocrinologia e Metabologia RQE:14091",
     ],
     check: CheckBoxOutlined,
   },
@@ -112,37 +113,26 @@ export const images = [
     alt: "Ana Beatriz",
   },
   {
-    url: "/images/consultorio.jpeg",
-    alt: "Consultório",
-  },
-  {
     url: "/images/recepcao.jpeg",
     alt: "Recepção",
   },
   {
-    url: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
-    alt: "Coffee",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
-    alt: "Honey",
+    url: "/images/consultorio.jpeg",
+    alt: "Consultório",
   },
   {
     url: "/images/anabeatriz.jpeg",
     alt: "Ana Beatriz",
   },
   {
-    url: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
-    alt: "Sea Star",
+    url: "/images/maca.jpeg",
+    alt: "Ambulatório",
   },
   {
-    url: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
-    alt: "Breakfast",
+    url: "/images/estacionamento.jpg",
+    alt: "Estacionamento",
   },
 ];
-
-
-
 
 export const links = [
   {
