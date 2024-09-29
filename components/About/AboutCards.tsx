@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Masonry } from "@mui/lab";
-import { Box, Paper, Typography } from "@mui/material";
+import { Box, Paper, Tooltip, Typography } from "@mui/material";
 import { CheckBoxOutlined, Instagram, LinkedIn } from "@mui/icons-material";
 import { cards } from "@/constants";
 
@@ -66,27 +66,78 @@ export default function MasonryWithVariableHeightItems() {
                   justifyContent: "center",
                 }}
               >
-                <Link href="http://lattes.cnpq.br/1395223223729745" target="_blank">
-                  <Image alt="Currículo Lattes" src="/images/lattes.png" width={32} height={32} />
-                </Link>
+                <Tooltip
+                  arrow
+                  title="Currículo Lattes"
+                  slotProps={{
+                    popper: {
+                      modifiers: [
+                        {
+                          name: 'offset',
+                          options: {
+                            offset: [0, -10],
+                          },
+                        },
+                      ],
+                    },
+                  }}  
+                >
+                  <Link href="http://lattes.cnpq.br/1395223223729745" target="_blank">
+                    <Image alt="Currículo Lattes" src="/images/lattes.png" width={32} height={32} />
+                  </Link>
+                </Tooltip>
 
-                <Link href="https://www.instagram.com/anabeatrizwinter/" target="_blank">
-                  <Instagram
-                    sx={{
-                      color: "#4f86ac",
-                      fontSize: { xs: "28px", md: "38px" },
-                    }}
-                  />
-                </Link>
+                <Tooltip
+                  arrow
+                  title="Instagram"
+                  slotProps={{
+                    popper: {
+                      modifiers: [
+                        {
+                          name: 'offset',
+                          options: {
+                            offset: [0, -10],
+                          },
+                        },
+                      ],
+                    },
+                  }}  
+                >
+                  <Link href="https://www.instagram.com/anabeatrizwinter/" target="_blank">
+                    <Instagram
+                      sx={{
+                        color: "#4f86ac",
+                        fontSize: { xs: "28px", md: "38px" },
+                      }}
+                    />
+                  </Link>
+                </Tooltip>
 
-                <Link href="https://www.linkedin.com/in/anabeatrizwintertavares/" target="_blank">
-                  <LinkedIn
-                    sx={{
-                      color: "#008bc2",
-                      fontSize: { xs: "28px", md: "38px" },
-                    }}
-                  />
-                </Link>
+                <Tooltip
+                  arrow
+                  title="LinkedIn"
+                  slotProps={{
+                    popper: {
+                      modifiers: [
+                        {
+                          name: 'offset',
+                          options: {
+                            offset: [0, -10],
+                          },
+                        },
+                      ],
+                    },
+                  }}                  
+                >
+                  <Link href="https://www.linkedin.com/in/anabeatrizwintertavares/" target="_blank">
+                    <LinkedIn
+                      sx={{
+                        color: "#008bc2",
+                        fontSize: { xs: "28px", md: "38px" },
+                      }}
+                    />
+                  </Link>
+                </Tooltip>
               </Box>
             )}
 
