@@ -7,6 +7,7 @@ import {
   LinkedIn,
   MedicalServices,
   MonitorHeart,
+  NewspaperOutlined,
   School,
 } from "@mui/icons-material";
 
@@ -48,6 +49,16 @@ export const cards = [
       "Tavares, Ana Beatriz Winter; Seixas da Silva, I.A.; Silvestre, D.H.S.; Paixão, C.M.; Vaisman, M.; Conceição, F.L. Potential risks of glucagon stimulation test in elderly people. Growth Hormone & IGF Research, v.25, p.53-56, 2015."
     ],
     check: CheckBoxOutlined,
+  },
+  {
+    title: "Na mídia",
+    icon: NewspaperOutlined,
+    content: [
+      {
+        text: "Marie Claire Saúde",
+        link: "https://revistamarieclaire.globo.com/saude/noticia/2024/11/acromegalia-meus-pes-e-maos-cresceram-meu-corpo-inchou-e-eu-sentia-dores-de-cabeca-intensas.ghtml",
+      }
+    ],
   },
   {
     title: "Registros Profissionais",
@@ -176,3 +187,6 @@ export const reviews = [
     profile: "/images/dlaranja.png"
   },
 ];
+
+
+

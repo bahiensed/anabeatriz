@@ -11,7 +11,8 @@ export default function MasonryWithVariableHeightItems() {
   return (
     <Box
       sx={{
-        maxWidth: 1280, //use maxWidth instead of fixed width
+        alignItems: "center",
+        justifyContent: "center",
         width: "100%"
       }}
     >
@@ -42,21 +43,39 @@ export default function MasonryWithVariableHeightItems() {
               {card.title}
             </Typography>
 
-            {card.content.map((text) => (
-              <>
-                <Typography
-                  sx={{
-                    color: "#343434",
-                    fontFamily: "openSans, sans-serif",
-                    lineHeight: 1.6,
-                    pb: 2
-                  }}
-                >
-                  <CheckBoxOutlined sx={{ color: "#43aae6", mr: 0.4, verticalAlign: "top" }}/>
-                  {text}
-                </Typography>
-              </>
-            ))}
+
+
+
+            {card.content.map((item, index) => (
+  <Typography
+    key={index}
+    sx={{
+      color: "#343434",
+      fontFamily: "openSans, sans-serif",
+      lineHeight: 1.6,
+      pb: 2,
+    }}
+  >
+    <CheckBoxOutlined sx={{ color: "#43aae6", mr: 0.4, verticalAlign: "top" }} />
+    {typeof item === "object" && "link" in item ? (
+      <Link
+        href={item.link}
+        target="_blank"
+        style={{
+          textDecoration: "none",
+          color: "#43aae6",
+        }}
+      >
+        {item.text}
+      </Link>
+    ) : (
+      item
+    )}
+  </Typography>
+))}
+
+
+
 
             {card.social && (
               <Box
