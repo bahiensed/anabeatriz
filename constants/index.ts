@@ -93,9 +93,10 @@ export const cards = [
     title: "Prêmios",
     icon: EmojiEventsOutlined,
     content: [
+      "Cientista Mãe do Estado do Rio de Janeiro, 2024.",
       "Grant de Pesquisa Clínica. XXI Encontro Brasileiro de Tireoide, Departamento de Tireoide, SBEM, 2024.",
       "Cinco Melhores Pôsteres Clínicos. XIX Latin American Thyroid Congress. Association between proteinuria and TSH in patients with Chronic Kidney Disease stages 3 and 4, Latin American Thyroid Association, 2023",
-      "Menção Honrosa. 31 Semana Científica da UERJ. Correlação entre função tireoidiana e doença renal crônica estágios 3 e 4, UERJ, 2022.",
+      "Menção Honrosa. 31ᵃ Semana Científica da UERJ. Correlação entre função tireoidiana e doença renal crônica estágios 3 e 4, UERJ, 2022.",
       "APQ1, FAPERJ, 2021."
     ],
     check: CheckBoxOutlined,
