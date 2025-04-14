@@ -30,7 +30,7 @@ const Footer = () => {
         }}
       >
         <Typography>
-          <Web sx={{ color:"#333", fontFamily: "Dosis, sans-serif", fontSize: "small", mt: 0.9, verticalAlign: "top" }} /> made with <FavoriteBorder sx={{ color: "red", fontSize: "small", mt: 0.9, verticalAlign: "top" }} /> by <Link href="https://bahien.se" target="_blank" style={{ textDecoration: "underline" }}>bahien.se</Link>
+          <Web sx={{ color:"#333", fontFamily: "Dosis, sans-serif", fontSize: "small", mt: 0.9, verticalAlign: "top" }} /> made with <FavoriteBorder sx={{ color: "red", fontSize: "small", mt: 0.9, verticalAlign: "top" }} /> by <Link href="https://x.com/bahiensed" target="_blank" style={{ textDecoration: "underline" }}>bahiensed</Link>
         </Typography>
       </Box>
     </>
