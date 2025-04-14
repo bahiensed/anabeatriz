@@ -102,6 +102,16 @@ export const cards = [
     check: CheckBoxOutlined,
   },
   {
+    title: "Textos",
+    icon: NewspaperOutlined,
+    content: [
+      {
+        text: "Endocrinologia e Metabologia",
+        link: "https://www.anabeatrizwinter.com.br/endocrinologia-e-metabologia",
+      }
+    ],
+  },
+  {
     title: "Mais Informações",
     icon: FilterDrama,
     content: [],
