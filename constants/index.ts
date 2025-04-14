@@ -4,6 +4,7 @@ import {
   EmojiEventsOutlined,
   FilterDrama,
   HowToReg,
+  LibraryBooks,
   LinkedIn,
   MedicalServices,
   MonitorHeart,
@@ -103,11 +104,11 @@ export const cards = [
   },
   {
     title: "Textos",
-    icon: NewspaperOutlined,
+    icon: LibraryBooks,
     content: [
       {
         text: "Endocrinologia e Metabologia",
-        link: "https://www.anabeatrizwinter.com.br/endocrinologia-e-metabologia",
+        link: "/endocrinologia-e-metabologia",
       }
     ],
   },
