@@ -43,9 +43,10 @@ export const cards = [
     title: "Publicações",
     icon: ArticleOutlined,
     content: [
+      "Tavares, Ana Beatriz Winter; Saldanha, A.; da Costa, M.F.; Collett-Solberg, P.F.; Tannus, L.R.M.; Kendler, D.B. HUP - Série Rotinas Hospitalares: Endocrinologia. Volume XV, Parte 2, 2025.",
       "Cavalcante, R.B.M.; Leão, L.M.C.S.M.; Tavares, Ana Beatriz Winter; Lopes, K.G.; Kraemer-Aguiar, L.G. Fat Distribution and its Correlation with Insulin Resistance, Androgen Markers, and Proinflammatory Cytokines in Polycystic Ovary Syndrome. HORMONE AND METABOLIC RESEARCH, 2024.",
       "Félix, T.M.; de Oliveira, B.M.; Artifon, M.; Carvalho, I.; Bernardi, F.A.; Schawartz, I.V.D.; Saute, J.A.; Ferraz, V.E.F. ; Acosta, A.X.; Sorte, N.B.; Alves, D.; Amorim, T.; Adjuto, G.M.A.F.; Almeida, R.E.S.; Brandão, F.R.; Bueno, L.S.M.; de Andrade, M.D.F.C.; Cagliari, C.I.; Cardoso, M.T.; TAVARES, Ana Beatriz Winter. Epidemiology of rare diseases in Brazil: protocol of the Brazilian Rare Diseases Network (RARAS-BRDN). Orphanet Journal of Rare Diseases, v.17, p.1-13, 2022.",
-      "Tavares, Ana Beatriz Winter; COLLETT-SOLBERG, P.F. Growth hormone deficiency and the transition from pediatric to adult care. Jornal de Pediatria, v.97, p.595-602, 2021.",
+      "Tavares, Ana Beatriz Winter; Collett-Solberg, P.F. Growth hormone deficiency and the transition from pediatric to adult care. Jornal de Pediatria, v.97, p.595-602, 2021.",
       "Tavares, Ana Beatriz Winter; Seixas da Silva, I.A.; Silvestre, D.H.S.; Pinheiro, M.F.C.; Vaisman, M.; Conceição, F.L. Growth hormone and cortisol secretion in the elderly evaluated using the glucagon stimulation test. ENDOCRINE, v.56, p.317-324, 2017.",
       "Tavares, Ana Beatriz Winter; Seixas da Silva, I.A.; Silvestre, D.H.S.; Paixão, C.M.; Vaisman, M.; Conceição, F.L. Potential risks of glucagon stimulation test in elderly people. Growth Hormone & IGF Research, v.25, p.53-56, 2015."
     ],
@@ -103,9 +104,13 @@ export const cards = [
     check: CheckBoxOutlined,
   },
   {
-    title: "Textos",
+    title: "Livros & Textos",
     icon: LibraryBooks,
     content: [
+            {
+        text: "Endocrinologia",
+        link: "https://share.google/uWM4aP8jOIsimwVWb",
+      },
       {
         text: "Endocrinologia e Metabologia",
         link: "/endocrinologia-e-metabologia",
@@ -145,6 +150,10 @@ export const images = [
   {
     url: "/images/anabeatriz.jpeg",
     alt: "Ana Beatriz",
+  },
+  {
+    url: "/images/book.jpeg",
+    alt: "Autógrafo",
   },
   {
     url: "/images/maca.jpeg",
